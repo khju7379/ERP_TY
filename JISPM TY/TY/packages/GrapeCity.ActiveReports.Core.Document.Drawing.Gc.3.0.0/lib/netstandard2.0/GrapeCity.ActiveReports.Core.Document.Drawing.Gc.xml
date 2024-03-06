@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GrapeCity.ActiveReports.Core.Document.Drawing.Gc</name>
+    </assembly>
+    <members>
+        <member name="F:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.Extensions.TECHNOLOGY">
+            <summary>
+            Device classification
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.Extensions.IsPrinter(System.Drawing.Graphics)">
+            <summary>
+            Is printer? For internal use only.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.WithEudc">
+            <summary>
+            For internal use only. Loads EUDC settings from Windows registry.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.FontStyleEmulation">
+            <summary>
+            For internal use only. Allows fonts bold/italic emulation.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.AllowIvs">
+            <summary>
+            For internal use only. Allows IVS characters in output.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.TextLayoutService">
+            <summary>
+            For internal use only. Gets corresponding service.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.ImagePersistenceService">
+            <summary>
+            For internal use only. Gets corresponding service.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.OnItemStart">
+            <summary>
+            For internal use only. Calls before any canvas item.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.BeforeItemStart">
+            <summary>
+            For internal use only. Calls before any canvas item.
+            If return true canvas item will be ignored in render.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.OnItemEnd">
+            <summary>
+            For internal use only. Calls after any canvas item.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.ConvertToOpaque">
+            <summary>
+            For internal use only. Converts all transparent images to opaque.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRenderer.#ctor(GrapeCity.Documents.Drawing.GcGraphics,System.Collections.Generic.IDictionary{System.Int32,GrapeCity.Documents.Drawing.IImage},System.Action{System.String,System.Drawing.RectangleF},GrapeCity.ActiveReports.Core.Document.Drawing.Gc.IDocumentFontsFactory)">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRendererBuilder">
+            <summary>
+            Creates new canvas renderer for cross-platform mode.
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcCanvasItemRendererBuilder.Create(System.Drawing.Graphics,System.Collections.Generic.IDictionary{System.Int32,GrapeCity.Documents.Drawing.IImage},System.Action{System.String,System.Drawing.RectangleF},GrapeCity.ActiveReports.Core.Document.Drawing.Gc.IDocumentFontsFactory)">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcImagePersistenceService">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcTextLayoutService">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GcTextLayoutService.AlignLastTabToTheRight(System.String,GrapeCity.Documents.Text.TextLayout,GrapeCity.Documents.Text.TextFormat)">
+            <summary>
+            Implements dirty hack to make page numbers in toc be aligned to the right.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GdiGcGraphics" -->
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GdiGcGraphics.GdiGcImage">
+            <summary>
+            Wrapper over GDI+ Image class.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.GdiGcGraphics.#ctor(System.Drawing.Graphics,GrapeCity.ActiveReports.Core.Document.Drawing.Gc.ITextLayoutRenderer,System.Nullable{System.Single})">
+            <summary>
+            Creates new bridge.
+            </summary>
+            <param name="graphics"></param>
+            <param name="textRenderer"></param>
+            <param name="printerResolution">Required to specify same printing resolution as expected for this graphics instance</param>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.IDocumentFontsFactory">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.IDocumentFontsFactory.GetFonts(System.Drawing.Font)">
+            <summary>
+            Map fonts.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Core.Document.Drawing.Gc.IDocumentFontsFactory.Scope">
+            <summary>
+            Allows access to system fonts or not.
+            </summary>
+        </member>
+    </members>
+</doc>

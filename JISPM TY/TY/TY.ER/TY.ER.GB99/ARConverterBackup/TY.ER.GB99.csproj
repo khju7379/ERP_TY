@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A71C31C-8501-494F-831B-B28D96968D6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.GB99</RootNamespace>
+    <AssemblyName>GB99</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.ER.GB99_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Chart, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Design6, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Document, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.PdfExport, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer6, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveReports6, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, PublicKeyToken=17fd64af4fbacfd3, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\SystemUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\..\..\..\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TYERGB991I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB991I.designer.cs">
+      <DependentUpon>TYERGB991I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB993S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB993S.Designer.cs">
+      <DependentUpon>TYERGB993S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB995S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB995S.Designer.cs">
+      <DependentUpon>TYERGB995S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB996S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB996S.Designer.cs">
+      <DependentUpon>TYERGB996S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB998S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB998S.Designer.cs">
+      <DependentUpon>TYERGB998S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB994P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB994P.Designer.cs">
+      <DependentUpon>TYERGB994P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB999S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB999S.Designer.cs">
+      <DependentUpon>TYERGB999S.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Library\TY.Service.Library.csproj">
+      <Project>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</Project>
+      <Name>TY.Service.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.GB00\TY.ER.GB00.csproj">
+      <Project>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</Project>
+      <Name>TY.ER.GB00</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TYERGB991I.resx">
+      <DependentUpon>TYERGB991I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB993S.resx">
+      <DependentUpon>TYERGB993S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB995S.resx">
+      <DependentUpon>TYERGB995S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB996S.resx">
+      <DependentUpon>TYERGB996S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB998S.resx">
+      <DependentUpon>TYERGB998S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB999S.resx">
+      <DependentUpon>TYERGB999S.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TY.ER.GB99_key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

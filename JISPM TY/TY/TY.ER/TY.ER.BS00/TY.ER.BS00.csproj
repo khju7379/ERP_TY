@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92AF84ED-76D2-4F1C-B2EB-7150AB0310B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.BS00</RootNamespace>
+    <AssemblyName>BS00</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Chart, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Core.Document, Version=3.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Core.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Publish\SystemUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="TY.Service.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Publish\TY.Service.Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TYBSCR001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR001I.Designer.cs">
+      <DependentUpon>TYBSCR001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR002I.Designer.cs">
+      <DependentUpon>TYBSCR002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR003I.Designer.cs">
+      <DependentUpon>TYBSCR003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR004S.Designer.cs">
+      <DependentUpon>TYBSCR004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR005B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR005B.Designer.cs">
+      <DependentUpon>TYBSCR005B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR006B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR006B.Designer.cs">
+      <DependentUpon>TYBSCR006B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR007S.Designer.cs">
+      <DependentUpon>TYBSCR007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR008S.Designer.cs">
+      <DependentUpon>TYBSCR008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR009S.Designer.cs">
+      <DependentUpon>TYBSCR009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSCR010B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSCR010B.Designer.cs">
+      <DependentUpon>TYBSCR010B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSHU001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSHU001I.Designer.cs">
+      <DependentUpon>TYBSHU001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSHU002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSHU002S.Designer.cs">
+      <DependentUpon>TYBSHU002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB001B.Designer.cs">
+      <DependentUpon>TYBSKB001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB001I.Designer.cs">
+      <DependentUpon>TYBSKB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB002B.designer.cs">
+      <DependentUpon>TYBSKB002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB002I.designer.cs">
+      <DependentUpon>TYBSKB002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB003B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB003B.designer.cs">
+      <DependentUpon>TYBSKB003B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB003I.designer.cs">
+      <DependentUpon>TYBSKB003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB004I.designer.cs">
+      <DependentUpon>TYBSKB004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB004S.designer.cs">
+      <DependentUpon>TYBSKB004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB005B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB005B.designer.cs">
+      <DependentUpon>TYBSKB005B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB005I.designer.cs">
+      <DependentUpon>TYBSKB005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB006I.designer.cs">
+      <DependentUpon>TYBSKB006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB006P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB006P.designer.cs">
+      <DependentUpon>TYBSKB006P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB007B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB007B.Designer.cs">
+      <DependentUpon>TYBSKB007B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB007I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB007I.designer.cs">
+      <DependentUpon>TYBSKB007I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSKB06C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSKB06C1.designer.cs">
+      <DependentUpon>TYBSKB06C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ001B.Designer.cs">
+      <DependentUpon>TYBSSJ001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ002I.Designer.cs">
+      <DependentUpon>TYBSSJ002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ003I.Designer.cs">
+      <DependentUpon>TYBSSJ003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ003P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ003P.Designer.cs">
+      <DependentUpon>TYBSSJ003P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ004I.Designer.cs">
+      <DependentUpon>TYBSSJ004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ004P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ004P.Designer.cs">
+      <DependentUpon>TYBSSJ004P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ005I.Designer.cs">
+      <DependentUpon>TYBSSJ005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ008I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ008I.designer.cs">
+      <DependentUpon>TYBSSJ008I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ009I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ009I.Designer.cs">
+      <DependentUpon>TYBSSJ009I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ010B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ010B.Designer.cs">
+      <DependentUpon>TYBSSJ010B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ011S.Designer.cs">
+      <DependentUpon>TYBSSJ011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ012R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ012R.Designer.cs">
+      <DependentUpon>TYBSSJ012R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ012S.Designer.cs">
+      <DependentUpon>TYBSSJ012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ013S.Designer.cs">
+      <DependentUpon>TYBSSJ013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ014S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ014S.Designer.cs">
+      <DependentUpon>TYBSSJ014S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSSJ015B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSSJ015B.Designer.cs">
+      <DependentUpon>TYBSSJ015B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP001I.Designer.cs">
+      <DependentUpon>TYBSUP001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP002S.Designer.cs">
+      <DependentUpon>TYBSUP002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP003S.Designer.cs">
+      <DependentUpon>TYBSUP003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP004S.Designer.cs">
+      <DependentUpon>TYBSUP004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP005S.Designer.cs">
+      <DependentUpon>TYBSUP005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSUP01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSUP01C1.Designer.cs">
+      <DependentUpon>TYBSUP01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYBSHU001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYBSHU001B.Designer.cs">
+      <DependentUpon>TYBSHU001B.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TY.ER.GB00\TY.ER.GB00.csproj">
+      <Project>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</Project>
+      <Name>TY.ER.GB00</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TYBSCR001I.resx">
+      <DependentUpon>TYBSCR001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR002I.resx">
+      <DependentUpon>TYBSCR002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR003I.resx">
+      <DependentUpon>TYBSCR003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR004S.resx">
+      <DependentUpon>TYBSCR004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR005B.resx">
+      <DependentUpon>TYBSCR005B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR006B.resx">
+      <DependentUpon>TYBSCR006B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR007S.resx">
+      <DependentUpon>TYBSCR007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR008S.resx">
+      <DependentUpon>TYBSCR008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR009S.resx">
+      <DependentUpon>TYBSCR009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSCR010B.resx">
+      <DependentUpon>TYBSCR010B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSHU001I.resx">
+      <DependentUpon>TYBSHU001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSHU002S.resx">
+      <DependentUpon>TYBSHU002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB001B.resx">
+      <DependentUpon>TYBSKB001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB001I.resx">
+      <DependentUpon>TYBSKB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB002B.resx">
+      <DependentUpon>TYBSKB002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB002I.resx">
+      <DependentUpon>TYBSKB002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB003B.resx">
+      <DependentUpon>TYBSKB003B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB003I.resx">
+      <DependentUpon>TYBSKB003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB004I.resx">
+      <DependentUpon>TYBSKB004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB004S.resx">
+      <DependentUpon>TYBSKB004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB005B.resx">
+      <DependentUpon>TYBSKB005B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB005I.resx">
+      <DependentUpon>TYBSKB005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB006I.resx">
+      <DependentUpon>TYBSKB006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB006P.resx">
+      <DependentUpon>TYBSKB006P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB007B.resx">
+      <DependentUpon>TYBSKB007B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB007I.resx">
+      <DependentUpon>TYBSKB007I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSKB06C1.resx">
+      <DependentUpon>TYBSKB06C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ001B.resx">
+      <DependentUpon>TYBSSJ001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ002I.resx">
+      <DependentUpon>TYBSSJ002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ003I.resx">
+      <DependentUpon>TYBSSJ003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ003P.resx">
+      <DependentUpon>TYBSSJ003P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ004I.resx">
+      <DependentUpon>TYBSSJ004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ004P.resx">
+      <DependentUpon>TYBSSJ004P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ005I.resx">
+      <DependentUpon>TYBSSJ005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ008I.resx">
+      <DependentUpon>TYBSSJ008I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ009I.resx">
+      <DependentUpon>TYBSSJ009I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ010B.resx">
+      <DependentUpon>TYBSSJ010B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ011S.resx">
+      <DependentUpon>TYBSSJ011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ012R.resx">
+      <DependentUpon>TYBSSJ012R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ012S.resx">
+      <DependentUpon>TYBSSJ012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ013S.resx">
+      <DependentUpon>TYBSSJ013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ014S.resx">
+      <DependentUpon>TYBSSJ014S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSSJ015B.resx">
+      <DependentUpon>TYBSSJ015B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP001I.resx">
+      <DependentUpon>TYBSUP001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP002S.resx">
+      <DependentUpon>TYBSUP002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP003S.resx">
+      <DependentUpon>TYBSUP003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP004S.resx">
+      <DependentUpon>TYBSUP004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP005S.resx">
+      <DependentUpon>TYBSUP005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSUP01C1.resx">
+      <DependentUpon>TYBSUP01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBSHU001B.resx">
+      <DependentUpon>TYBSHU001B.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

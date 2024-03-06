@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GrapeCity.ActiveReports.Core.Export.Image.Page</name>
+    </assembly>
+    <members>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.BitmapRenderersFactory">
+            <summary>
+            Factory with .NET Core based image renderer.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRendering">
+            <summary>
+            Implements rendering of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to bitmap image of specified format.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRendering.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,System.Func{System.Int32,System.IO.Stream},GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings)">
+            <summary>
+            Renders report.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings">
+            <summary>
+            ImageRenderer settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.PageSettings">
+            <summary>
+            Page settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.Watermark">
+            <summary>
+            Page settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.BackgroundColor">
+            <summary>
+            Paper color.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.OutputFormat">
+            <summary>
+            Output image format
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.Target">
+            <summary>
+            Layers filtration hint.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.DpiX">
+            <summary>
+            Horizontal resolution of result image in pixels per inch.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.DpiY">
+            <summary>
+            Vertical resolution of result image in pixels per inch.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.TiffCompression">
+            <summary>
+            Gets or sets the TIFF compression type
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.JpegQuality">
+            <summary>
+            Specifies the desired image fidelity.
+            0 indicates the lowest possible fidelity.
+            100 specifies the highest fidelity.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingSettings.TiffDithering">
+            Specifies whether the image should be dithered when saving to a black and white output format, like CCITT3. 
+            This property has no effect if the TiffCompression property is set to Rle, Lzw or None(represents color output).
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.ImageFormats">
+            <summary>
+            Supported output image formats.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.TiffCompressionType">
+            <summary>
+            Specifies the Tagged Image File Format (TIFF) compression options
+            </summary>
+        </member>
+    </members>
+</doc>

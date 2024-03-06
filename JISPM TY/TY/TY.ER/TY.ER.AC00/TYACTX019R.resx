@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="VS01ST01AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST02AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST03AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST04AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST05AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST06AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST07AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST09AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST01TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST02TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST03TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST04TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST07TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST08TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS01ST09TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU10AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU10TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU11AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU11TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU12TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU12AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU13AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU13TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU14AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU14TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU15AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU15TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU16AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU16TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU17TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS02PU17AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VSPAYMETAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS03RE18TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS03RE19TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS03RE20TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS04SC21TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS04SC22TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS04SC23TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS04SC24TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS04SC25TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VSTOTTAXAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VSREBANKNM.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VSREACCCODE.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VSSHUTDATE.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VSSHUTSAYU.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV26BUS.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV27BUS.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV28BUS.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV26NAM.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV27NAM.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV28NAM.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV29BUS.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV29NAM.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS05EV26AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS05EV27AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS05EV28AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS05EV29AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS05EV30AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS05EV26COD.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="VS04YC23TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI31AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI31TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI32AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI32TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI33AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI34AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI35AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI35TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI36AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI36TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI38AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI38TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI37AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS06MI37TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET39AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET39TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET40TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET40AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET41AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET41TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET42AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET42TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14NT47TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET44TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET45TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET46TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET47TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE48AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE48TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE49AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE49TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE50AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE50TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE51TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS16DE51AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE54TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE53TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE52TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE56TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE57TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS18BE58TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD59AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD59TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD60AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD60TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD61AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD61TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD62TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD62AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD63AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD63TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD64AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD64TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD65AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD65TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD66AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD66TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD67AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD67TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD68TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD68AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD69AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD69TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD70AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD70TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD71AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD71TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD72TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD72AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD73AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD73TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD74AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD74TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AD75TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS25EX76AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS25EX77AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS25EX78AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS25EX79AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS26IS80AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS26IS81AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS14ET47AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AR75TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AR76TAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AR75AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="VS24AR76AMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

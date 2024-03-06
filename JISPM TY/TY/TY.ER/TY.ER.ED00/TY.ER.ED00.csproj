@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6591D59-DF66-4F3C-B714-248A5E7F7D53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.ED00</RootNamespace>
+    <AssemblyName>ED00</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.ER.ED00_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Publish\SystemUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDFB001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDFB001B.Designer.cs">
+      <DependentUpon>TYEDFB001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDFB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDFB002S.Designer.cs">
+      <DependentUpon>TYEDFB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDFB003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDFB003S.Designer.cs">
+      <DependentUpon>TYEDFB003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDFB004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDFB004S.Designer.cs">
+      <DependentUpon>TYEDFB004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB001I.designer.cs">
+      <DependentUpon>TYEDKB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB002S.Designer.cs">
+      <DependentUpon>TYEDKB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB003S.Designer.cs">
+      <DependentUpon>TYEDKB003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB004B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB004B.designer.cs">
+      <DependentUpon>TYEDKB004B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB005I.designer.cs">
+      <DependentUpon>TYEDKB005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB005S.designer.cs">
+      <DependentUpon>TYEDKB005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB008S.Designer.cs">
+      <DependentUpon>TYEDKB008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB009S.designer.cs">
+      <DependentUpon>TYEDKB009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB010I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB010I.designer.cs">
+      <DependentUpon>TYEDKB010I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB010S.Designer.cs">
+      <DependentUpon>TYEDKB010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB011S.designer.cs">
+      <DependentUpon>TYEDKB011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB012I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB012I.Designer.cs">
+      <DependentUpon>TYEDKB012I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB012P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB012P.Designer.cs">
+      <DependentUpon>TYEDKB012P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB012S.Designer.cs">
+      <DependentUpon>TYEDKB012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB013I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB013I.Designer.cs">
+      <DependentUpon>TYEDKB013I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB013S.Designer.cs">
+      <DependentUpon>TYEDKB013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB014I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB014I.Designer.cs">
+      <DependentUpon>TYEDKB014I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB014S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB014S.Designer.cs">
+      <DependentUpon>TYEDKB014S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB015I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB015I.Designer.cs">
+      <DependentUpon>TYEDKB015I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB015S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB015S.Designer.cs">
+      <DependentUpon>TYEDKB015S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB03C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB03C1.Designer.cs">
+      <DependentUpon>TYEDKB03C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB12C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB12C1.Designer.cs">
+      <DependentUpon>TYEDKB12C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB13C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB13C1.Designer.cs">
+      <DependentUpon>TYEDKB13C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB13C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB13C2.Designer.cs">
+      <DependentUpon>TYEDKB13C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB14C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB14C1.Designer.cs">
+      <DependentUpon>TYEDKB14C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB15C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB15C1.Designer.cs">
+      <DependentUpon>TYEDKB15C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYEDKB15C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYEDKB15C2.Designer.cs">
+      <DependentUpon>TYEDKB15C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\KniaWebRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\KniaWebRef_Test\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Doc\WEB SERVICE.DOCX" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TY.ER.ED00_key.pfx" />
+    <None Include="Web References\KniaWebRef\InsWebService.wsdl" />
+    <None Include="Web References\KniaWebRef\InsWebServiceImplService.wsdl" />
+    <None Include="Web References\KniaWebRef\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\KniaWebRef_Test\InsWebService.wsdl" />
+    <None Include="Web References\KniaWebRef_Test\InsWebServiceImplService.wsdl" />
+    <None Include="Web References\KniaWebRef_Test\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Library\TY.Service.Library.csproj">
+      <Project>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</Project>
+      <Name>TY.Service.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.GB00\TY.ER.GB00.csproj">
+      <Project>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</Project>
+      <Name>TY.ER.GB00</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.UT00\TY.ER.UT00.csproj">
+      <Project>{C7717340-3FD4-4D59-B5E2-0D5459281F76}</Project>
+      <Name>TY.ER.UT00</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TYEDFB001B.resx">
+      <DependentUpon>TYEDFB001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDFB002S.resx">
+      <DependentUpon>TYEDFB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDFB003S.resx">
+      <DependentUpon>TYEDFB003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDFB004S.resx">
+      <DependentUpon>TYEDFB004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB001I.resx">
+      <DependentUpon>TYEDKB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB002S.resx">
+      <DependentUpon>TYEDKB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB003S.resx">
+      <DependentUpon>TYEDKB003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB004B.resx">
+      <DependentUpon>TYEDKB004B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB005I.resx">
+      <DependentUpon>TYEDKB005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB005S.resx">
+      <DependentUpon>TYEDKB005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB008S.resx">
+      <DependentUpon>TYEDKB008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB009S.resx">
+      <DependentUpon>TYEDKB009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB010I.resx">
+      <DependentUpon>TYEDKB010I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB010S.resx">
+      <DependentUpon>TYEDKB010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB011S.resx">
+      <DependentUpon>TYEDKB011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB012I.resx">
+      <DependentUpon>TYEDKB012I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB012P.resx">
+      <DependentUpon>TYEDKB012P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB012S.resx">
+      <DependentUpon>TYEDKB012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB013I.resx">
+      <DependentUpon>TYEDKB013I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB013S.resx">
+      <DependentUpon>TYEDKB013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB014I.resx">
+      <DependentUpon>TYEDKB014I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB014S.resx">
+      <DependentUpon>TYEDKB014S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB015I.resx">
+      <DependentUpon>TYEDKB015I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB015S.resx">
+      <DependentUpon>TYEDKB015S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB03C1.resx">
+      <DependentUpon>TYEDKB03C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB12C1.resx">
+      <DependentUpon>TYEDKB12C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB13C1.resx">
+      <DependentUpon>TYEDKB13C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB13C2.resx">
+      <DependentUpon>TYEDKB13C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB14C1.resx">
+      <DependentUpon>TYEDKB14C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB15C1.resx">
+      <DependentUpon>TYEDKB15C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYEDKB15C2.resx">
+      <DependentUpon>TYEDKB15C2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://14.63.227.103/ws/insWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\KniaWebRef_Test\</RelPath>
+      <UpdateFromURL>http://14.63.227.103/ws/insWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ED00_KniaWebRef_Test_InsWebServiceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://insedi.knia.or.kr/ws/insWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\KniaWebRef\</RelPath>
+      <UpdateFromURL>http://insedi.knia.or.kr/ws/insWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ED00_KniaWebRef_InsWebServiceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

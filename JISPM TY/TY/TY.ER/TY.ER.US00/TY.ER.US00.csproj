@@ -1,0 +1,1762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDA31094-16F8-4C9C-AAA1-419D4E47A056}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.US00</RootNamespace>
+    <AssemblyName>US00</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.ER.US00_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Chart, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Core.Document, Version=3.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Core.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Html, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Common, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility">
+      <HintPath>..\..\TY.Publish\SystemUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4310.24318, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Publish\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TYUSAU001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU001I.Designer.cs">
+      <DependentUpon>TYUSAU001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU002I.Designer.cs">
+      <DependentUpon>TYUSAU002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU003I.Designer.cs">
+      <DependentUpon>TYUSAU003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU005I.Designer.cs">
+      <DependentUpon>TYUSAU005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU006I.Designer.cs">
+      <DependentUpon>TYUSAU006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU012S.designer.cs">
+      <DependentUpon>TYUSAU012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU02C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU02C1.Designer.cs">
+      <DependentUpon>TYUSAU02C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA001I.designer.cs">
+      <DependentUpon>TYUSGA001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA002I.designer.cs">
+      <DependentUpon>TYUSGA002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA003I.designer.cs">
+      <DependentUpon>TYUSGA003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA004P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA004P.designer.cs">
+      <DependentUpon>TYUSGA004P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA004R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSGA004R.Designer.cs">
+      <DependentUpon>TYUSGA004R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA005I.Designer.cs">
+      <DependentUpon>TYUSGA005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA01C1.designer.cs">
+      <DependentUpon>TYUSGA01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA01C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA01C2.designer.cs">
+      <DependentUpon>TYUSGA01C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA01C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA01C3.designer.cs">
+      <DependentUpon>TYUSGA01C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGA01C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGA01C4.designer.cs">
+      <DependentUpon>TYUSGA01C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB003S.designer.cs">
+      <DependentUpon>TYUSGB003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB004S.Designer.cs">
+      <DependentUpon>TYUSGB004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB005S.designer.cs">
+      <DependentUpon>TYUSGB005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB006S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB006S.designer.cs">
+      <DependentUpon>TYUSGB006S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB007S.Designer.cs">
+      <DependentUpon>TYUSGB007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB008S.designer.cs">
+      <DependentUpon>TYUSGB008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB002R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSKB002R.Designer.cs">
+      <DependentUpon>TYUSKB002R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB003R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSKB003R.Designer.cs">
+      <DependentUpon>TYUSKB003R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB004I.Designer.cs">
+      <DependentUpon>TYUSKB004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R.Designer.cs">
+      <DependentUpon>TYUSME017R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R1.Designer.cs">
+      <DependentUpon>TYUSME017R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R2.Designer.cs">
+      <DependentUpon>TYUSME017R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R3.Designer.cs">
+      <DependentUpon>TYUSME017R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R4.Designer.cs">
+      <DependentUpon>TYUSME017R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R5.Designer.cs">
+      <DependentUpon>TYUSME017R5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R6.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R6.Designer.cs">
+      <DependentUpon>TYUSME017R6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017R7.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME017R7.Designer.cs">
+      <DependentUpon>TYUSME017R7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME019I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME019I.Designer.cs">
+      <DependentUpon>TYUSME019I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME021P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME021P.designer.cs">
+      <DependentUpon>TYUSME021P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME021R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME021R.Designer.cs">
+      <DependentUpon>TYUSME021R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME023P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME023P.designer.cs">
+      <DependentUpon>TYUSME023P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME023R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME023R.Designer.cs">
+      <DependentUpon>TYUSME023R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME024P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME024P.designer.cs">
+      <DependentUpon>TYUSME024P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME024R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME024R.Designer.cs">
+      <DependentUpon>TYUSME024R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME025S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME025S.designer.cs">
+      <DependentUpon>TYUSME025S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME028R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME028R.Designer.cs">
+      <DependentUpon>TYUSME028R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME028S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME028S.designer.cs">
+      <DependentUpon>TYUSME028S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME029S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME029S.designer.cs">
+      <DependentUpon>TYUSME029S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME030S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME030S.designer.cs">
+      <DependentUpon>TYUSME030S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME031P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME031P.designer.cs">
+      <DependentUpon>TYUSME031P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME031R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME031R.Designer.cs">
+      <DependentUpon>TYUSME031R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME032R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME032R.Designer.cs">
+      <DependentUpon>TYUSME032R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME032S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME032S.designer.cs">
+      <DependentUpon>TYUSME032S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME033R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME033R.Designer.cs">
+      <DependentUpon>TYUSME033R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME033S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME033S.designer.cs">
+      <DependentUpon>TYUSME033S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME034R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME034R.Designer.cs">
+      <DependentUpon>TYUSME034R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME034S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME034S.designer.cs">
+      <DependentUpon>TYUSME034S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME035S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME035S.designer.cs">
+      <DependentUpon>TYUSME035S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME036S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME036S.designer.cs">
+      <DependentUpon>TYUSME036S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME037S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME037S.designer.cs">
+      <DependentUpon>TYUSME037S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME038R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME038R.Designer.cs">
+      <DependentUpon>TYUSME038R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME038S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME038S.designer.cs">
+      <DependentUpon>TYUSME038S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME039R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME039R.Designer.cs">
+      <DependentUpon>TYUSME039R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME039S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME039S.designer.cs">
+      <DependentUpon>TYUSME039S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME042P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME042P.designer.cs">
+      <DependentUpon>TYUSME042P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME042R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME042R1.Designer.cs">
+      <DependentUpon>TYUSME042R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME042R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME042R2.Designer.cs">
+      <DependentUpon>TYUSME042R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME043P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME043P.designer.cs">
+      <DependentUpon>TYUSME043P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME043R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME043R.Designer.cs">
+      <DependentUpon>TYUSME043R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME063B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME063B.Designer.cs">
+      <DependentUpon>TYUSME063B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME064P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME064P.Designer.cs">
+      <DependentUpon>TYUSME064P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME064R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME064R1.Designer.cs">
+      <DependentUpon>TYUSME064R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME064R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME064R2.Designer.cs">
+      <DependentUpon>TYUSME064R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME065R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME065R1.Designer.cs">
+      <DependentUpon>TYUSME065R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME065R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME065R2.Designer.cs">
+      <DependentUpon>TYUSME065R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME065S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME065S.Designer.cs">
+      <DependentUpon>TYUSME065S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME079P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME079P.designer.cs">
+      <DependentUpon>TYUSME079P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME079R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME079R.Designer.cs">
+      <DependentUpon>TYUSME079R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ001I.designer.cs">
+      <DependentUpon>TYUSNJ001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ002I.designer.cs">
+      <DependentUpon>TYUSNJ002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ003I.designer.cs">
+      <DependentUpon>TYUSNJ003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ004I.Designer.cs">
+      <DependentUpon>TYUSNJ004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ004S.Designer.cs">
+      <DependentUpon>TYUSNJ004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ005I.Designer.cs">
+      <DependentUpon>TYUSNJ005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ005S.Designer.cs">
+      <DependentUpon>TYUSNJ005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ006I.Designer.cs">
+      <DependentUpon>TYUSNJ006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ007B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ007B.Designer.cs">
+      <DependentUpon>TYUSNJ007B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ008B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ008B.Designer.cs">
+      <DependentUpon>TYUSNJ008B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ009S.Designer.cs">
+      <DependentUpon>TYUSNJ009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ010P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ010P.Designer.cs">
+      <DependentUpon>TYUSNJ010P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ016R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ016R1.Designer.cs">
+      <DependentUpon>TYUSNJ016R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ016S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ016S.Designer.cs">
+      <DependentUpon>TYUSNJ016S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018R1.Designer.cs">
+      <DependentUpon>TYUSNJ018R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018P.Designer.cs">
+      <DependentUpon>TYUSNJ018P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018R3.Designer.cs">
+      <DependentUpon>TYUSNJ018R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018R4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018R4.Designer.cs">
+      <DependentUpon>TYUSNJ018R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018R5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018R5.Designer.cs">
+      <DependentUpon>TYUSNJ018R5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ027I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ027I.designer.cs">
+      <DependentUpon>TYUSNJ027I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ04C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ04C1.Designer.cs">
+      <DependentUpon>TYUSNJ04C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR004S.Designer.cs">
+      <DependentUpon>TYUSPR004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR007R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR007R.Designer.cs">
+      <DependentUpon>TYUSPR007R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU004S.Designer.cs">
+      <DependentUpon>TYUSAU004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU008S.Designer.cs">
+      <DependentUpon>TYUSAU008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU009S.Designer.cs">
+      <DependentUpon>TYUSAU009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU010B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU010B.Designer.cs">
+      <DependentUpon>TYUSAU010B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU011B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU011B.Designer.cs">
+      <DependentUpon>TYUSAU011B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB001S.designer.cs">
+      <DependentUpon>TYUSGB001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSGB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSGB002S.designer.cs">
+      <DependentUpon>TYUSGB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB001I.designer.cs">
+      <DependentUpon>TYUSKB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB002I.designer.cs">
+      <DependentUpon>TYUSKB002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB002S.Designer.cs">
+      <DependentUpon>TYUSKB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB003I.Designer.cs">
+      <DependentUpon>TYUSKB003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB003S.Designer.cs">
+      <DependentUpon>TYUSKB003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB005I.Designer.cs">
+      <DependentUpon>TYUSKB005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB007S.Designer.cs">
+      <DependentUpon>TYUSKB007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB009S.Designer.cs">
+      <DependentUpon>TYUSKB009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB010S.Designer.cs">
+      <DependentUpon>TYUSKB010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB011S.Designer.cs">
+      <DependentUpon>TYUSKB011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB012S.Designer.cs">
+      <DependentUpon>TYUSKB012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB013I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB013I.Designer.cs">
+      <DependentUpon>TYUSKB013I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB013S.Designer.cs">
+      <DependentUpon>TYUSKB013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB014I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB014I.Designer.cs">
+      <DependentUpon>TYUSKB014I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB014S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB014S.Designer.cs">
+      <DependentUpon>TYUSKB014S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB03C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB03C1.Designer.cs">
+      <DependentUpon>TYUSKB03C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME001B.Designer.cs">
+      <DependentUpon>TYUSME001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME002I.Designer.cs">
+      <DependentUpon>TYUSME002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME002S.Designer.cs">
+      <DependentUpon>TYUSME002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME003I.Designer.cs">
+      <DependentUpon>TYUSME003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME003S.Designer.cs">
+      <DependentUpon>TYUSME003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME005I.designer.cs">
+      <DependentUpon>TYUSME005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME006I.designer.cs">
+      <DependentUpon>TYUSME006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME007I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME007I.designer.cs">
+      <DependentUpon>TYUSME007I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME009I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME009I.designer.cs">
+      <DependentUpon>TYUSME009I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME011I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME011I.designer.cs">
+      <DependentUpon>TYUSME011I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME013I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME013I.designer.cs">
+      <DependentUpon>TYUSME013I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME015B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME015B.Designer.cs">
+      <DependentUpon>TYUSME015B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME017P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME017P.Designer.cs">
+      <DependentUpon>TYUSME017P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME01C1.Designer.cs">
+      <DependentUpon>TYUSME01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME020I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME020I.designer.cs">
+      <DependentUpon>TYUSME020I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME026P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME026P.Designer.cs">
+      <DependentUpon>TYUSME026P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME026R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME026R.Designer.cs">
+      <DependentUpon>TYUSME026R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME027P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME027P.Designer.cs">
+      <DependentUpon>TYUSME027P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME027R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME027R.Designer.cs">
+      <DependentUpon>TYUSME027R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME041B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME041B.Designer.cs">
+      <DependentUpon>TYUSME041B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME050I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME050I.designer.cs">
+      <DependentUpon>TYUSME050I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME051P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME051P.designer.cs">
+      <DependentUpon>TYUSME051P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME051R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSME051R.Designer.cs">
+      <DependentUpon>TYUSME051R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME059B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME059B.Designer.cs">
+      <DependentUpon>TYUSME059B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME060I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME060I.designer.cs">
+      <DependentUpon>TYUSME060I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME062I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME062I.designer.cs">
+      <DependentUpon>TYUSME062I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME075B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME075B.Designer.cs">
+      <DependentUpon>TYUSME075B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME078S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME078S.Designer.cs">
+      <DependentUpon>TYUSME078S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSKB008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSKB008S.Designer.cs">
+      <DependentUpon>TYUSKB008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME20C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME20C1.designer.cs">
+      <DependentUpon>TYUSME20C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSME20C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSME20C2.designer.cs">
+      <DependentUpon>TYUSME20C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ025S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ025S.Designer.cs">
+      <DependentUpon>TYUSNJ025S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ026S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ026S.Designer.cs">
+      <DependentUpon>TYUSNJ026S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR007S.Designer.cs">
+      <DependentUpon>TYUSPR007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR008R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR008R1.Designer.cs">
+      <DependentUpon>TYUSPR008R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR008R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR008R2.Designer.cs">
+      <DependentUpon>TYUSPR008R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR008S.Designer.cs">
+      <DependentUpon>TYUSPR008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ018R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ018R2.Designer.cs">
+      <DependentUpon>TYUSNJ018R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR009S.Designer.cs">
+      <DependentUpon>TYUSPR009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR009R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR009R1.Designer.cs">
+      <DependentUpon>TYUSPR009R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ010R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ010R1.Designer.cs">
+      <DependentUpon>TYUSNJ010R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ010R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ010R2.Designer.cs">
+      <DependentUpon>TYUSNJ010R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ010R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ010R3.Designer.cs">
+      <DependentUpon>TYUSNJ010R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ010R4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ010R4.Designer.cs">
+      <DependentUpon>TYUSNJ010R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ011P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ011P.Designer.cs">
+      <DependentUpon>TYUSNJ011P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSNJ011R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSNJ011R1.Designer.cs">
+      <DependentUpon>TYUSNJ011R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR001P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR001P.Designer.cs">
+      <DependentUpon>TYUSPR001P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR001R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR001R1.Designer.cs">
+      <DependentUpon>TYUSPR001R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR002S.Designer.cs">
+      <DependentUpon>TYUSPR002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR002R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR002R1.Designer.cs">
+      <DependentUpon>TYUSPR002R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR003S.Designer.cs">
+      <DependentUpon>TYUSPR003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR003R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR003R1.Designer.cs">
+      <DependentUpon>TYUSPR003R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR003R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR003R2.Designer.cs">
+      <DependentUpon>TYUSPR003R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR005S.Designer.cs">
+      <DependentUpon>TYUSPR005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR006S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR006S.Designer.cs">
+      <DependentUpon>TYUSPR006S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR006R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYUSPR006R1.Designer.cs">
+      <DependentUpon>TYUSPR006R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSPR010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSPR010S.Designer.cs">
+      <DependentUpon>TYUSPR010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYUSAU013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYUSAU013S.Designer.cs">
+      <DependentUpon>TYUSAU013S.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TY.ER.US00_key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TYUSAU001I.resx">
+      <DependentUpon>TYUSAU001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU002I.resx">
+      <DependentUpon>TYUSAU002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU003I.resx">
+      <DependentUpon>TYUSAU003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU005I.resx">
+      <DependentUpon>TYUSAU005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU006I.resx">
+      <DependentUpon>TYUSAU006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU012S.resx">
+      <DependentUpon>TYUSAU012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU02C1.resx">
+      <DependentUpon>TYUSAU02C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA001I.resx">
+      <DependentUpon>TYUSGA001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA002I.resx">
+      <DependentUpon>TYUSGA002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA003I.resx">
+      <DependentUpon>TYUSGA003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA004P.resx">
+      <DependentUpon>TYUSGA004P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA004R.resx">
+      <DependentUpon>TYUSGA004R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA005I.resx">
+      <DependentUpon>TYUSGA005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA01C1.resx">
+      <DependentUpon>TYUSGA01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA01C2.resx">
+      <DependentUpon>TYUSGA01C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA01C3.resx">
+      <DependentUpon>TYUSGA01C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGA01C4.resx">
+      <DependentUpon>TYUSGA01C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB003S.resx">
+      <DependentUpon>TYUSGB003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB004S.resx">
+      <DependentUpon>TYUSGB004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB005S.resx">
+      <DependentUpon>TYUSGB005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB006S.resx">
+      <DependentUpon>TYUSGB006S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB007S.resx">
+      <DependentUpon>TYUSGB007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB008S.resx">
+      <DependentUpon>TYUSGB008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB002R.resx">
+      <DependentUpon>TYUSKB002R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB003R.resx">
+      <DependentUpon>TYUSKB003R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB004I.resx">
+      <DependentUpon>TYUSKB004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R.resx">
+      <DependentUpon>TYUSME017R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R1.resx">
+      <DependentUpon>TYUSME017R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R2.resx">
+      <DependentUpon>TYUSME017R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R3.resx">
+      <DependentUpon>TYUSME017R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R4.resx">
+      <DependentUpon>TYUSME017R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R5.resx">
+      <DependentUpon>TYUSME017R5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R6.resx">
+      <DependentUpon>TYUSME017R6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017R7.resx">
+      <DependentUpon>TYUSME017R7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME019I.resx">
+      <DependentUpon>TYUSME019I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME021P.resx">
+      <DependentUpon>TYUSME021P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME021R.resx">
+      <DependentUpon>TYUSME021R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME023P.resx">
+      <DependentUpon>TYUSME023P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME023R.resx">
+      <DependentUpon>TYUSME023R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME024P.resx">
+      <DependentUpon>TYUSME024P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME024R.resx">
+      <DependentUpon>TYUSME024R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME025S.resx">
+      <DependentUpon>TYUSME025S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME028R.resx">
+      <DependentUpon>TYUSME028R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME028S.resx">
+      <DependentUpon>TYUSME028S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME029S.resx">
+      <DependentUpon>TYUSME029S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME030S.resx">
+      <DependentUpon>TYUSME030S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME031P.resx">
+      <DependentUpon>TYUSME031P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME031R.resx">
+      <DependentUpon>TYUSME031R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME032R.resx">
+      <DependentUpon>TYUSME032R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME032S.resx">
+      <DependentUpon>TYUSME032S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME033R.resx">
+      <DependentUpon>TYUSME033R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME033S.resx">
+      <DependentUpon>TYUSME033S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME034R.resx">
+      <DependentUpon>TYUSME034R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME034S.resx">
+      <DependentUpon>TYUSME034S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME035S.resx">
+      <DependentUpon>TYUSME035S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME036S.resx">
+      <DependentUpon>TYUSME036S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME037S.resx">
+      <DependentUpon>TYUSME037S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME038R.resx">
+      <DependentUpon>TYUSME038R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME038S.resx">
+      <DependentUpon>TYUSME038S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME039R.resx">
+      <DependentUpon>TYUSME039R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME039S.resx">
+      <DependentUpon>TYUSME039S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME042P.resx">
+      <DependentUpon>TYUSME042P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME042R1.resx">
+      <DependentUpon>TYUSME042R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME042R2.resx">
+      <DependentUpon>TYUSME042R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME043P.resx">
+      <DependentUpon>TYUSME043P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME043R.resx">
+      <DependentUpon>TYUSME043R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME063B.resx">
+      <DependentUpon>TYUSME063B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME064P.resx">
+      <DependentUpon>TYUSME064P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME064R1.resx">
+      <DependentUpon>TYUSME064R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME064R2.resx">
+      <DependentUpon>TYUSME064R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME065R1.resx">
+      <DependentUpon>TYUSME065R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME065R2.resx">
+      <DependentUpon>TYUSME065R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME065S.resx">
+      <DependentUpon>TYUSME065S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME079P.resx">
+      <DependentUpon>TYUSME079P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME079R.resx">
+      <DependentUpon>TYUSME079R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ001I.resx">
+      <DependentUpon>TYUSNJ001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ002I.resx">
+      <DependentUpon>TYUSNJ002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ003I.resx">
+      <DependentUpon>TYUSNJ003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ004I.resx">
+      <DependentUpon>TYUSNJ004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ004S.resx">
+      <DependentUpon>TYUSNJ004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ005I.resx">
+      <DependentUpon>TYUSNJ005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ005S.resx">
+      <DependentUpon>TYUSNJ005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ006I.resx">
+      <DependentUpon>TYUSNJ006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ007B.resx">
+      <DependentUpon>TYUSNJ007B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ008B.resx">
+      <DependentUpon>TYUSNJ008B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ009S.resx">
+      <DependentUpon>TYUSNJ009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ010P.resx">
+      <DependentUpon>TYUSNJ010P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ016R1.resx">
+      <DependentUpon>TYUSNJ016R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ016S.resx">
+      <DependentUpon>TYUSNJ016S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018R1.resx">
+      <DependentUpon>TYUSNJ018R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018P.resx">
+      <DependentUpon>TYUSNJ018P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018R3.resx">
+      <DependentUpon>TYUSNJ018R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018R4.resx">
+      <DependentUpon>TYUSNJ018R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018R5.resx">
+      <DependentUpon>TYUSNJ018R5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ027I.resx">
+      <DependentUpon>TYUSNJ027I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ04C1.resx">
+      <DependentUpon>TYUSNJ04C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR004S.resx">
+      <DependentUpon>TYUSPR004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR007R.resx">
+      <DependentUpon>TYUSPR007R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU004S.resx">
+      <DependentUpon>TYUSAU004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU008S.resx">
+      <DependentUpon>TYUSAU008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU009S.resx">
+      <DependentUpon>TYUSAU009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU010B.resx">
+      <DependentUpon>TYUSAU010B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU011B.resx">
+      <DependentUpon>TYUSAU011B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB001S.resx">
+      <DependentUpon>TYUSGB001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSGB002S.resx">
+      <DependentUpon>TYUSGB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB001I.resx">
+      <DependentUpon>TYUSKB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB002I.resx">
+      <DependentUpon>TYUSKB002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB002S.resx">
+      <DependentUpon>TYUSKB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB003I.resx">
+      <DependentUpon>TYUSKB003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB003S.resx">
+      <DependentUpon>TYUSKB003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB005I.resx">
+      <DependentUpon>TYUSKB005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB007S.resx">
+      <DependentUpon>TYUSKB007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB009S.resx">
+      <DependentUpon>TYUSKB009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB010S.resx">
+      <DependentUpon>TYUSKB010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB011S.resx">
+      <DependentUpon>TYUSKB011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB012S.resx">
+      <DependentUpon>TYUSKB012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB013I.resx">
+      <DependentUpon>TYUSKB013I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB013S.resx">
+      <DependentUpon>TYUSKB013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB014I.resx">
+      <DependentUpon>TYUSKB014I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB014S.resx">
+      <DependentUpon>TYUSKB014S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB03C1.resx">
+      <DependentUpon>TYUSKB03C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME001B.resx">
+      <DependentUpon>TYUSME001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME002I.resx">
+      <DependentUpon>TYUSME002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME002S.resx">
+      <DependentUpon>TYUSME002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME003I.resx">
+      <DependentUpon>TYUSME003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME003S.resx">
+      <DependentUpon>TYUSME003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME005I.resx">
+      <DependentUpon>TYUSME005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME006I.resx">
+      <DependentUpon>TYUSME006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME007I.resx">
+      <DependentUpon>TYUSME007I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME009I.resx">
+      <DependentUpon>TYUSME009I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME011I.resx">
+      <DependentUpon>TYUSME011I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME013I.resx">
+      <DependentUpon>TYUSME013I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME015B.resx">
+      <DependentUpon>TYUSME015B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME017P.resx">
+      <DependentUpon>TYUSME017P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME01C1.resx">
+      <DependentUpon>TYUSME01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME020I.resx">
+      <DependentUpon>TYUSME020I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME026P.resx">
+      <DependentUpon>TYUSME026P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME026R.resx">
+      <DependentUpon>TYUSME026R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME027P.resx">
+      <DependentUpon>TYUSME027P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME027R.resx">
+      <DependentUpon>TYUSME027R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME041B.resx">
+      <DependentUpon>TYUSME041B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME050I.resx">
+      <DependentUpon>TYUSME050I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME051P.resx">
+      <DependentUpon>TYUSME051P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME051R.resx">
+      <DependentUpon>TYUSME051R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME059B.resx">
+      <DependentUpon>TYUSME059B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME060I.resx">
+      <DependentUpon>TYUSME060I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME062I.resx">
+      <DependentUpon>TYUSME062I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME075B.resx">
+      <DependentUpon>TYUSME075B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME078S.resx">
+      <DependentUpon>TYUSME078S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSKB008S.resx">
+      <DependentUpon>TYUSKB008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME20C1.resx">
+      <DependentUpon>TYUSME20C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSME20C2.resx">
+      <DependentUpon>TYUSME20C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ025S.resx">
+      <DependentUpon>TYUSNJ025S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ026S.resx">
+      <DependentUpon>TYUSNJ026S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR007S.resx">
+      <DependentUpon>TYUSPR007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR008R1.resx">
+      <DependentUpon>TYUSPR008R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR008R2.resx">
+      <DependentUpon>TYUSPR008R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR008S.resx">
+      <DependentUpon>TYUSPR008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ018R2.resx">
+      <DependentUpon>TYUSNJ018R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR009S.resx">
+      <DependentUpon>TYUSPR009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR009R1.resx">
+      <DependentUpon>TYUSPR009R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ010R1.resx">
+      <DependentUpon>TYUSNJ010R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ010R2.resx">
+      <DependentUpon>TYUSNJ010R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ010R3.resx">
+      <DependentUpon>TYUSNJ010R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ010R4.resx">
+      <DependentUpon>TYUSNJ010R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ011P.resx">
+      <DependentUpon>TYUSNJ011P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSNJ011R1.resx">
+      <DependentUpon>TYUSNJ011R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR001P.resx">
+      <DependentUpon>TYUSPR001P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR001R1.resx">
+      <DependentUpon>TYUSPR001R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR002S.resx">
+      <DependentUpon>TYUSPR002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR002R1.resx">
+      <DependentUpon>TYUSPR002R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR003S.resx">
+      <DependentUpon>TYUSPR003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR003R1.resx">
+      <DependentUpon>TYUSPR003R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR003R2.resx">
+      <DependentUpon>TYUSPR003R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR005S.resx">
+      <DependentUpon>TYUSPR005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR006S.resx">
+      <DependentUpon>TYUSPR006S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR006R1.resx">
+      <DependentUpon>TYUSPR006R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSPR010S.resx">
+      <DependentUpon>TYUSPR010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYUSAU013S.resx">
+      <DependentUpon>TYUSAU013S.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Library\TY.Service.Library.csproj">
+      <Project>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</Project>
+      <Name>TY.Service.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.AC00\TY.ER.AC00.csproj">
+      <Project>{75D55E10-29D4-41AA-A2A0-1BD0124D83C9}</Project>
+      <Name>TY.ER.AC00</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.GB00\TY.ER.GB00.csproj">
+      <Project>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</Project>
+      <Name>TY.ER.GB00</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.UT00\TY.ER.UT00.csproj">
+      <Project>{C7717340-3FD4-4D59-B5E2-0D5459281F76}</Project>
+      <Name>TY.ER.UT00</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

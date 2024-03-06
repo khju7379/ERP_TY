@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://impl.ws.insedi.or.kr/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://ws.insedi.or.kr/" name="InsWebServiceImplService" targetNamespace="http://impl.ws.insedi.or.kr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://ws.insedi.or.kr/" location="http://14.63.227.103/ws/insWebService?wsdl=InsWebService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="InsWebServiceImplServiceSoapBinding" type="ns1:InsWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getBondedGoodsOutResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBondedGoodsOutResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBondedGoodsOutResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsInResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDomesticGoodsInResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDomesticGoodsInResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsOutInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveDomesticGoodsOutInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveDomesticGoodsOutInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsOutInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveBondedGoodsOutInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveBondedGoodsOutInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsInInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveBondedGoodsInInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveBondedGoodsInInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsInInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveDomesticGoodsInInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveDomesticGoodsInInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsPremiumInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveBondedGoodsPremiumInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveBondedGoodsPremiumInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsOutResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDomesticGoodsOutResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDomesticGoodsOutResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBondedGoodsPremiumResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBondedGoodsPremiumResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBondedGoodsPremiumResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sayHi">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="sayHi">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sayHiResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsPremiumInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveDomesticGoodsPremiumInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveDomesticGoodsPremiumInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBondedGoodsInResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBondedGoodsInResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBondedGoodsInResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getStatusData">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getStatusData">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getStatusDataResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsPremiumResult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDomesticGoodsPremiumResult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDomesticGoodsPremiumResultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InsWebServiceImplService">
+    <wsdl:port name="InsWebServiceImplPort" binding="tns:InsWebServiceImplServiceSoapBinding">
+      <soap:address location="http://14.63.227.103/ws/insWebService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.Service.Library</RootNamespace>
+    <AssemblyName>TY.Service.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.Service.Library_Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Common, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, PublicKeyToken=17fd64af4fbacfd3, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\SystemUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\TYButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYCheckComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYCodeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYMaskedDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYRicherTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TYRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYSpread.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYSpreadCellType\TYTextCellType.cs" />
+    <Compile Include="Controls\TYTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYTextButtonBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TYTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaticCommon.cs" />
+    <Compile Include="TYCodeBoxPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYCodeBoxPopup.Designer.cs">
+      <DependentUpon>TYCodeBoxPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYCookie.cs" />
+    <Compile Include="TYEdiLayout.cs" />
+    <Compile Include="TYSession.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TYUserInfo.cs" />
+    <Compile Include="TYUtil.cs" />
+    <EmbeddedResource Include="Controls\TYRicherTextBox.resx">
+      <DependentUpon>TYRicherTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYBase.resx">
+      <DependentUpon>TYBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TYCodeBoxPopup.resx">
+      <DependentUpon>TYCodeBoxPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TYBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="TY.Service.Library_Key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleCenterHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleLeftJustHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleRightHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindNextHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndentHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPictureHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_BulletsHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutdentHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\application_view_detail.png" />
+    <Content Include="Resources\btn_down.gif" />
+    <Content Include="Resources\btn_member_search.gif" />
+    <Content Include="Resources\btn_search.png" />
+    <Content Include="Resources\bt_down.gif" />
+    <Content Include="Resources\create.png" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\Download.gif" />
+    <Content Include="Resources\expand.png" />
+    <Content Include="Resources\expand4.png" />
+    <Content Include="Resources\it_write.png" />
+    <Content Include="Resources\leftmenu_search_icon_02.png" />
+    <Content Include="Resources\pdf.gif" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\progress_bar.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

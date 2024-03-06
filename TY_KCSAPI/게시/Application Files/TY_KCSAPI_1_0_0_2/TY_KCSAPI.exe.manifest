@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TY_KCSAPI.exe" version="1.0.0.2" publicKeyToken="22f3ddccc3c48d8e" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TY_KCSAPI" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="TY_KCSAPI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+          <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+          <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+          <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+
+          이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+          requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TY_KCSAPI.exe" size="12200">
+      <assemblyIdentity name="TY_KCSAPI" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5cwbMVtVCE+s6yFGJ9jJQtWetuM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=UC02\Administrator" issuerKeyHash="5a37e02b3c42730f558703131ddac5f55371b547" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9rCcqQ2zHHS/rtO+Dtn6SgFy2nM=</DigestValue></Reference></SignedInfo><SignatureValue>PXuiSdpkY71XxZQMrCrlYwOpRWJ3lUuF2Lj1TXhXSrUonxJikgRkajbEErwBZNl60b1NgzeT6tWCSyuFsy0yBdlP/s47rXmd8JARHCYoSIxK59ipKCK2HeJU6ESYSO1DLWl3ZUeTXJ2gw0h1IPes68YbcgATcHknG9/RC/ZlwzE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7rs76VZDbJv7+bropsXo5HxmVUx1ucZXXLX4jMOWfWIvDiofF9rX3IYfG4IURb5JG8X02v/d6qFZ/hUIgYRvBtCwf1k8vW+8LQJ649fYmaHK1EMdIPFXiSUVE7IBh2F8/kiZFTrm5NhArxv8QfFo/qg88d3a4AcERv/b21ZHld0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="73da72014afad90ebed3aebf741cb30da99cb0f6" Description="" Url=""><as:assemblyIdentity name="TY_KCSAPI.exe" version="1.0.0.2" publicKeyToken="22f3ddccc3c48d8e" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=UC02\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BH7W3NQeNSy9AEtrRBLfW5VmtXI=</DigestValue></Reference></SignedInfo><SignatureValue>aZfFlxdnly22nIXr55HB3jdddQnaT30TStOdzSBhW4mps+oSdnJmMCp67bqooM2744TF3HuH4pXgxlFhHBZkJfjBTCcNZ87DpVSaG/eDIR1jGgSpEr/o7KZazIXu6nHL5tGtEvBivigETAIfD9G1KHSCDTHyWCqTmDA2KLJBy6Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7rs76VZDbJv7+bropsXo5HxmVUx1ucZXXLX4jMOWfWIvDiofF9rX3IYfG4IURb5JG8X02v/d6qFZ/hUIgYRvBtCwf1k8vW+8LQJ649fYmaHK1EMdIPFXiSUVE7IBh2F8/kiZFTrm5NhArxv8QfFo/qg88d3a4AcERv/b21ZHld0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQFf6pHIgud5FLI7TUHwkozjANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQAVQBDADAAMgBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwHhcNMjIwNTI1MDgyMTM1WhcNMjMwNTI1MTQyMTM1WjAvMS0wKwYDVQQDHiQAVQBDADAAMgBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAO67O+lWQ2yb+/m66KbF6OR8ZlVMdbnGV1y1+IzDln1iLw4qHxfa19yGHxuCFEW+SRvF9Nr/3eqhWf4VCIGEbwbQsH9ZPL1vvC0CeuPX2JmhytRDHSDxV4klFROyAYdhfP5ImRU65uTYQK8b/EHxaP6oPPHd2uAHBEb/29tWR5XdAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEA0T1eYRE4S8YKAagKnZc+5OaLq2f30IlxgO4DjMSbi2JuUzDmvS2Z2JE9oEKQwfC9T5NG2suvKajXhMAhpUY8iLH73v3FxKaPT0kIiO7+POU6mbmREJyLoIjnVztZNitFRU4LK9pQFQ3V98XevBSNk5XQIlvs37fn9WjWGXDWfuc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

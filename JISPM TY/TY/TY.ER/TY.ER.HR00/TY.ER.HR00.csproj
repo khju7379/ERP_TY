@@ -1,0 +1,2453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF9D01D8-51F3-441D-AD30-9825E24C3391}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.HR00</RootNamespace>
+    <AssemblyName>HR00</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.ER.HR00_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17fd64af4fbacfd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Publish\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Chart, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Core.Document, Version=3.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Core.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\Spread.NET 14\Windows Forms\v14.45.20213.0\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, PublicKeyToken=17fd64af4fbacfd3, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\SystemUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS001B.Designer.cs">
+      <DependentUpon>TYHRBS001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS001I.Designer.cs">
+      <DependentUpon>TYHRBS001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS001S.Designer.cs">
+      <DependentUpon>TYHRBS001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS002B.Designer.cs">
+      <DependentUpon>TYHRBS002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS002I.Designer.cs">
+      <DependentUpon>TYHRBS002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS002S.Designer.cs">
+      <DependentUpon>TYHRBS002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS003B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS003B.Designer.cs">
+      <DependentUpon>TYHRBS003B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS004B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS004B.Designer.cs">
+      <DependentUpon>TYHRBS004B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS004S.Designer.cs">
+      <DependentUpon>TYHRBS004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRBS01B1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRBS01B1.Designer.cs">
+      <DependentUpon>TYHRBS01B1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS001B.Designer.cs">
+      <DependentUpon>TYHRCS001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS001I.Designer.cs">
+      <DependentUpon>TYHRCS001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS001S.Designer.cs">
+      <DependentUpon>TYHRCS001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS002I.Designer.cs">
+      <DependentUpon>TYHRCS002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS003S.Designer.cs">
+      <DependentUpon>TYHRCS003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS004R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRCS004R.Designer.cs">
+      <DependentUpon>TYHRCS004R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS004S.Designer.cs">
+      <DependentUpon>TYHRCS004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS005I.Designer.cs">
+      <DependentUpon>TYHRCS005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRCS005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRCS005S.Designer.cs">
+      <DependentUpon>TYHRCS005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES001B.designer.cs">
+      <DependentUpon>TYHRES001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES001S.designer.cs">
+      <DependentUpon>TYHRES001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES002B.designer.cs">
+      <DependentUpon>TYHRES002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES002S.designer.cs">
+      <DependentUpon>TYHRES002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES003S.designer.cs">
+      <DependentUpon>TYHRES003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES004B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES004B.designer.cs">
+      <DependentUpon>TYHRES004B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES004S.designer.cs">
+      <DependentUpon>TYHRES004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES005S.designer.cs">
+      <DependentUpon>TYHRES005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES006B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES006B.designer.cs">
+      <DependentUpon>TYHRES006B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES006I.designer.cs">
+      <DependentUpon>TYHRES006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES006S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES006S.designer.cs">
+      <DependentUpon>TYHRES006S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES007B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES007B.designer.cs">
+      <DependentUpon>TYHRES007B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES007I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES007I.designer.cs">
+      <DependentUpon>TYHRES007I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES007S.designer.cs">
+      <DependentUpon>TYHRES007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES008S.designer.cs">
+      <DependentUpon>TYHRES008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES100S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES100S.designer.cs">
+      <DependentUpon>TYHRES100S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES101S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES101S.designer.cs">
+      <DependentUpon>TYHRES101S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRES102S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRES102S.designer.cs">
+      <DependentUpon>TYHRES102S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR001B.Designer.cs">
+      <DependentUpon>TYHRFR001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR001I.Designer.cs">
+      <DependentUpon>TYHRFR001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR001S.Designer.cs">
+      <DependentUpon>TYHRFR001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR002I.Designer.cs">
+      <DependentUpon>TYHRFR002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR002S.designer.cs">
+      <DependentUpon>TYHRFR002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR01C1.Designer.cs">
+      <DependentUpon>TYHRFR01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRFR02C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRFR02C1.Designer.cs">
+      <DependentUpon>TYHRFR02C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB001I.designer.cs">
+      <DependentUpon>TYHRGB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB001R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGB001R.Designer.cs">
+      <DependentUpon>TYHRGB001R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB001S.designer.cs">
+      <DependentUpon>TYHRGB001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB002I.Designer.cs">
+      <DependentUpon>TYHRGB002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB002S.Designer.cs">
+      <DependentUpon>TYHRGB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB003I.Designer.cs">
+      <DependentUpon>TYHRGB003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB003R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGB003R.Designer.cs">
+      <DependentUpon>TYHRGB003R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB003R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGB003R1.Designer.cs">
+      <DependentUpon>TYHRGB003R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB003S.Designer.cs">
+      <DependentUpon>TYHRGB003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB005R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGB005R.Designer.cs">
+      <DependentUpon>TYHRGB005R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB005S.Designer.cs">
+      <DependentUpon>TYHRGB005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGB01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGB01C1.Designer.cs">
+      <DependentUpon>TYHRGB01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT001B.designer.cs">
+      <DependentUpon>TYHRGT001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT001S.designer.cs">
+      <DependentUpon>TYHRGT001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT002B.designer.cs">
+      <DependentUpon>TYHRGT002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT002I.designer.cs">
+      <DependentUpon>TYHRGT002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT002S.designer.cs">
+      <DependentUpon>TYHRGT002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT003B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT003B.Designer.cs">
+      <DependentUpon>TYHRGT003B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT003I.Designer.cs">
+      <DependentUpon>TYHRGT003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT003S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT003S.Designer.cs">
+      <DependentUpon>TYHRGT003S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT004I.Designer.cs">
+      <DependentUpon>TYHRGT004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT004S.Designer.cs">
+      <DependentUpon>TYHRGT004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT005I.Designer.cs">
+      <DependentUpon>TYHRGT005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT005P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT005P.Designer.cs">
+      <DependentUpon>TYHRGT005P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT006B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT006B.Designer.cs">
+      <DependentUpon>TYHRGT006B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT007R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGT007R.Designer.cs">
+      <DependentUpon>TYHRGT007R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT007S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT007S.Designer.cs">
+      <DependentUpon>TYHRGT007S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT008S.designer.cs">
+      <DependentUpon>TYHRGT008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT009I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT009I.Designer.cs">
+      <DependentUpon>TYHRGT009I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT009R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRGT009R.Designer.cs">
+      <DependentUpon>TYHRGT009R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT009S.Designer.cs">
+      <DependentUpon>TYHRGT009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT010I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT010I.Designer.cs">
+      <DependentUpon>TYHRGT010I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT010S.Designer.cs">
+      <DependentUpon>TYHRGT010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT011S.Designer.cs">
+      <DependentUpon>TYHRGT011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT012S.Designer.cs">
+      <DependentUpon>TYHRGT012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT02C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT02C1.designer.cs">
+      <DependentUpon>TYHRGT02C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT10C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT10C1.Designer.cs">
+      <DependentUpon>TYHRGT10C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB001I.designer.cs">
+      <DependentUpon>TYHRKB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB002I.Designer.cs">
+      <DependentUpon>TYHRKB002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB002P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB002P.Designer.cs">
+      <DependentUpon>TYHRKB002P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB002S.Designer.cs">
+      <DependentUpon>TYHRKB002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB004S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB004S.Designer.cs">
+      <DependentUpon>TYHRKB004S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB005B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB005B.Designer.cs">
+      <DependentUpon>TYHRKB005B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB006B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB006B.Designer.cs">
+      <DependentUpon>TYHRKB006B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB008I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB008I.Designer.cs">
+      <DependentUpon>TYHRKB008I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB008R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB008R.Designer.cs">
+      <DependentUpon>TYHRKB008R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB008S.designer.cs">
+      <DependentUpon>TYHRKB008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB009S.designer.cs">
+      <DependentUpon>TYHRKB009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB010S.designer.cs">
+      <DependentUpon>TYHRKB010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB011I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB011I.designer.cs">
+      <DependentUpon>TYHRKB011I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB011S.designer.cs">
+      <DependentUpon>TYHRKB011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB012B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB012B.designer.cs">
+      <DependentUpon>TYHRKB012B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB013I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB013I.designer.cs">
+      <DependentUpon>TYHRKB013I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB013S.designer.cs">
+      <DependentUpon>TYHRKB013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB016P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB016P.Designer.cs">
+      <DependentUpon>TYHRKB016P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB016R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB016R.Designer.cs">
+      <DependentUpon>TYHRKB016R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017B.Designer.cs">
+      <DependentUpon>TYHRKB017B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017I.designer.cs">
+      <DependentUpon>TYHRKB017I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017R.Designer.cs">
+      <DependentUpon>TYHRKB017R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017R3.Designer.cs">
+      <DependentUpon>TYHRKB017R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017S.Designer.cs">
+      <DependentUpon>TYHRKB017S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB018B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB018B.Designer.cs">
+      <DependentUpon>TYHRKB018B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB018I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB018I.designer.cs">
+      <DependentUpon>TYHRKB018I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB018P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB018P.Designer.cs">
+      <DependentUpon>TYHRKB018P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB018S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB018S.Designer.cs">
+      <DependentUpon>TYHRKB018S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB019I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB019I.designer.cs">
+      <DependentUpon>TYHRKB019I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB019S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB019S.Designer.cs">
+      <DependentUpon>TYHRKB019S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB020I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB020I.designer.cs">
+      <DependentUpon>TYHRKB020I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB020S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB020S.Designer.cs">
+      <DependentUpon>TYHRKB020S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB021I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB021I.designer.cs">
+      <DependentUpon>TYHRKB021I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB021R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB021R.Designer.cs">
+      <DependentUpon>TYHRKB021R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB021S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB021S.designer.cs">
+      <DependentUpon>TYHRKB021S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB022I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB022I.designer.cs">
+      <DependentUpon>TYHRKB022I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB022P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB022P.designer.cs">
+      <DependentUpon>TYHRKB022P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB022R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB022R.Designer.cs">
+      <DependentUpon>TYHRKB022R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB022S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB022S.designer.cs">
+      <DependentUpon>TYHRKB022S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB023I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB023I.designer.cs">
+      <DependentUpon>TYHRKB023I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB023R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB023R.Designer.cs">
+      <DependentUpon>TYHRKB023R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB023S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB023S.designer.cs">
+      <DependentUpon>TYHRKB023S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C1.Designer.cs">
+      <DependentUpon>TYHRKB02C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C2.Designer.cs">
+      <DependentUpon>TYHRKB02C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C3.designer.cs">
+      <DependentUpon>TYHRKB02C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C4.designer.cs">
+      <DependentUpon>TYHRKB02C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C5.designer.cs">
+      <DependentUpon>TYHRKB02C5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C6.Designer.cs">
+      <DependentUpon>TYHRKB02C6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C7.designer.cs">
+      <DependentUpon>TYHRKB02C7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C8.designer.cs">
+      <DependentUpon>TYHRKB02C8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02C9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02C9.designer.cs">
+      <DependentUpon>TYHRKB02C9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB02P1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB02P1.Designer.cs">
+      <DependentUpon>TYHRKB02P1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB03C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB03C1.Designer.cs">
+      <DependentUpon>TYHRKB03C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB03C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB03C2.designer.cs">
+      <DependentUpon>TYHRKB03C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB18C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB18C1.Designer.cs">
+      <DependentUpon>TYHRKB18C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB19C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB19C1.Designer.cs">
+      <DependentUpon>TYHRKB19C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT001B.Designer.cs">
+      <DependentUpon>TYHRNT001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT001I.Designer.cs">
+      <DependentUpon>TYHRNT001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT001P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT001P.Designer.cs">
+      <DependentUpon>TYHRNT001P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT001S.Designer.cs">
+      <DependentUpon>TYHRNT001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT002I.Designer.cs">
+      <DependentUpon>TYHRNT002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT002R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT002R1.Designer.cs">
+      <DependentUpon>TYHRNT002R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT002R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT002R2.Designer.cs">
+      <DependentUpon>TYHRNT002R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT002S.Designer.cs">
+      <DependentUpon>TYHRNT002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003B.Designer.cs">
+      <DependentUpon>TYHRNT003B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003I.Designer.cs">
+      <DependentUpon>TYHRNT003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003R1.Designer.cs">
+      <DependentUpon>TYHRNT003R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003R2.Designer.cs">
+      <DependentUpon>TYHRNT003R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003R3.Designer.cs">
+      <DependentUpon>TYHRNT003R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT003R4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRNT003R4.Designer.cs">
+      <DependentUpon>TYHRNT003R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT004I.Designer.cs">
+      <DependentUpon>TYHRNT004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT005B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT005B.Designer.cs">
+      <DependentUpon>TYHRNT005B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT010S.Designer.cs">
+      <DependentUpon>TYHRNT010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT011S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT011S.Designer.cs">
+      <DependentUpon>TYHRNT011S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT012S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT012S.Designer.cs">
+      <DependentUpon>TYHRNT012S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT013S.Designer.cs">
+      <DependentUpon>TYHRNT013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT014S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT014S.Designer.cs">
+      <DependentUpon>TYHRNT014S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C1.Designer.cs">
+      <DependentUpon>TYHRNT01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C2.Designer.cs">
+      <DependentUpon>TYHRNT01C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C3.Designer.cs">
+      <DependentUpon>TYHRNT01C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C4.Designer.cs">
+      <DependentUpon>TYHRNT01C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C5.Designer.cs">
+      <DependentUpon>TYHRNT01C5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C6.Designer.cs">
+      <DependentUpon>TYHRNT01C6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C7.Designer.cs">
+      <DependentUpon>TYHRNT01C7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT02C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT02C4.Designer.cs">
+      <DependentUpon>TYHRNT02C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT02C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT02C1.Designer.cs">
+      <DependentUpon>TYHRNT02C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT02C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT02C2.Designer.cs">
+      <DependentUpon>TYHRNT02C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT02C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT02C3.Designer.cs">
+      <DependentUpon>TYHRNT02C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT04C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT04C1.Designer.cs">
+      <DependentUpon>TYHRNT04C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPR001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPR001B.designer.cs">
+      <DependentUpon>TYHRPR001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPR002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPR002I.designer.cs">
+      <DependentUpon>TYHRPR002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPR003B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPR003B.designer.cs">
+      <DependentUpon>TYHRPR003B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY001I.Designer.cs">
+      <DependentUpon>TYHRPY001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY003I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY003I.Designer.cs">
+      <DependentUpon>TYHRPY003I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY004I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY004I.Designer.cs">
+      <DependentUpon>TYHRPY004I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY005I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY005I.Designer.cs">
+      <DependentUpon>TYHRPY005I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY005P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY005P.Designer.cs">
+      <DependentUpon>TYHRPY005P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY005S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY005S.Designer.cs">
+      <DependentUpon>TYHRPY005S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY006I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY006I.Designer.cs">
+      <DependentUpon>TYHRPY006I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY006P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY006P.Designer.cs">
+      <DependentUpon>TYHRPY006P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY007P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY007P.designer.cs">
+      <DependentUpon>TYHRPY007P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY008I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY008I.designer.cs">
+      <DependentUpon>TYHRPY008I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY008S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY008S.designer.cs">
+      <DependentUpon>TYHRPY008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY009I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY009I.Designer.cs">
+      <DependentUpon>TYHRPY009I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY009S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY009S.Designer.cs">
+      <DependentUpon>TYHRPY009S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY010I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY010I.designer.cs">
+      <DependentUpon>TYHRPY010I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY010P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY010P.Designer.cs">
+      <DependentUpon>TYHRPY010P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY010S.designer.cs">
+      <DependentUpon>TYHRPY010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY011B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY011B.Designer.cs">
+      <DependentUpon>TYHRPY011B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY012P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY012P.designer.cs">
+      <DependentUpon>TYHRPY012P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY013S.designer.cs">
+      <DependentUpon>TYHRPY013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY014P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY014P.Designer.cs">
+      <DependentUpon>TYHRPY014P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY014S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY014S.Designer.cs">
+      <DependentUpon>TYHRPY014S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY015I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY015I.Designer.cs">
+      <DependentUpon>TYHRPY015I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY016S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY016S.Designer.cs">
+      <DependentUpon>TYHRPY016S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY018S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY018S.Designer.cs">
+      <DependentUpon>TYHRPY018S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY019S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY019S.Designer.cs">
+      <DependentUpon>TYHRPY019S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY01C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY01C1.Designer.cs">
+      <DependentUpon>TYHRPY01C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY01C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY01C2.Designer.cs">
+      <DependentUpon>TYHRPY01C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY020S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY020S.designer.cs">
+      <DependentUpon>TYHRPY020S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY021S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY021S.designer.cs">
+      <DependentUpon>TYHRPY021S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY022I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY022I.Designer.cs">
+      <DependentUpon>TYHRPY022I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY022S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY022S.Designer.cs">
+      <DependentUpon>TYHRPY022S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY023S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY023S.Designer.cs">
+      <DependentUpon>TYHRPY023S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY024B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY024B.Designer.cs">
+      <DependentUpon>TYHRPY024B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY024S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY024S.Designer.cs">
+      <DependentUpon>TYHRPY024S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY04C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY04C1.Designer.cs">
+      <DependentUpon>TYHRPY04C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY05C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY05C1.Designer.cs">
+      <DependentUpon>TYHRPY05C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY05C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY05C2.Designer.cs">
+      <DependentUpon>TYHRPY05C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY05C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY05C3.Designer.cs">
+      <DependentUpon>TYHRPY05C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY05C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY05C4.Designer.cs">
+      <DependentUpon>TYHRPY05C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY05C5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY05C5.Designer.cs">
+      <DependentUpon>TYHRPY05C5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY06C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY06C1.Designer.cs">
+      <DependentUpon>TYHRPY06C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY06C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY06C2.designer.cs">
+      <DependentUpon>TYHRPY06C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY06C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY06C3.designer.cs">
+      <DependentUpon>TYHRPY06C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY06C4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY06C4.Designer.cs">
+      <DependentUpon>TYHRPY06C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY06C5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY06C5.designer.cs">
+      <DependentUpon>TYHRPY06C5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY08C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY08C1.designer.cs">
+      <DependentUpon>TYHRPY08C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY10C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY10C1.designer.cs">
+      <DependentUpon>TYHRPY10C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12C1.designer.cs">
+      <DependentUpon>TYHRPY12C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12R1.Designer.cs">
+      <DependentUpon>TYHRPY12R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12R2.Designer.cs">
+      <DependentUpon>TYHRPY12R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY14C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY14C1.Designer.cs">
+      <DependentUpon>TYHRPY14C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY23C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRPY23C1.Designer.cs">
+      <DependentUpon>TYHRPY23C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSB001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSB001B.Designer.cs">
+      <DependentUpon>TYHRSB001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSB001I.Designer.cs">
+      <DependentUpon>TYHRSB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSB001R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRSB001R.Designer.cs">
+      <DependentUpon>TYHRSB001R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSB001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSB001S.Designer.cs">
+      <DependentUpon>TYHRSB001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSJ001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSJ001I.Designer.cs">
+      <DependentUpon>TYHRSJ001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSJ001S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSJ001S.Designer.cs">
+      <DependentUpon>TYHRSJ001S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSJ002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSJ002B.Designer.cs">
+      <DependentUpon>TYHRSJ002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSJ002I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSJ002I.Designer.cs">
+      <DependentUpon>TYHRSJ002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRSJ002S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRSJ002S.Designer.cs">
+      <DependentUpon>TYHRSJ002S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRYB001B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRYB001B.Designer.cs">
+      <DependentUpon>TYHRYB001B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRYB001I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRYB001I.Designer.cs">
+      <DependentUpon>TYHRYB001I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRYB001P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRYB001P.designer.cs">
+      <DependentUpon>TYHRYB001P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRYB001R.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRYB001R.Designer.cs">
+      <DependentUpon>TYHRYB001R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12R3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12R3.Designer.cs">
+      <DependentUpon>TYHRPY12R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB002B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB002B.designer.cs">
+      <DependentUpon>TYHRKB002B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017R1.Designer.cs">
+      <DependentUpon>TYHRKB017R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C8.Designer.cs">
+      <DependentUpon>TYHRNT01C8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12R4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12R4.Designer.cs">
+      <DependentUpon>TYHRPY12R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRGT013S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRGT013S.Designer.cs">
+      <DependentUpon>TYHRGT013S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB03C3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB03C3.designer.cs">
+      <DependentUpon>TYHRKB03C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB020B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB020B.Designer.cs">
+      <DependentUpon>TYHRKB020B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRPY12R5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRPY12R5.Designer.cs">
+      <DependentUpon>TYHRPY12R5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB024S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB024S.Designer.cs">
+      <DependentUpon>TYHRKB024S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB024I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB024I.designer.cs">
+      <DependentUpon>TYHRKB024I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB017R2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TYHRKB017R2.Designer.cs">
+      <DependentUpon>TYHRKB017R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB24C1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB24C1.designer.cs">
+      <DependentUpon>TYHRKB24C1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRKB24C2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRKB24C2.designer.cs">
+      <DependentUpon>TYHRKB24C2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT01C9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT01C9.Designer.cs">
+      <DependentUpon>TYHRNT01C9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYHRNT006B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYHRNT006B.Designer.cs">
+      <DependentUpon>TYHRNT006B.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Library\TY.Service.Library.csproj">
+      <Project>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</Project>
+      <Name>TY.Service.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.AC00\TY.ER.AC00.csproj">
+      <Project>{75D55E10-29D4-41AA-A2A0-1BD0124D83C9}</Project>
+      <Name>TY.ER.AC00</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TY.ER.GB00\TY.ER.GB00.csproj">
+      <Project>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</Project>
+      <Name>TY.ER.GB00</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS001B.resx">
+      <DependentUpon>TYHRBS001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS001I.resx">
+      <DependentUpon>TYHRBS001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS001S.resx">
+      <DependentUpon>TYHRBS001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS002B.resx">
+      <DependentUpon>TYHRBS002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS002I.resx">
+      <DependentUpon>TYHRBS002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS002S.resx">
+      <DependentUpon>TYHRBS002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS003B.resx">
+      <DependentUpon>TYHRBS003B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS004B.resx">
+      <DependentUpon>TYHRBS004B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS004S.resx">
+      <DependentUpon>TYHRBS004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRBS01B1.resx">
+      <DependentUpon>TYHRBS01B1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS001B.resx">
+      <DependentUpon>TYHRCS001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS001I.resx">
+      <DependentUpon>TYHRCS001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS001S.resx">
+      <DependentUpon>TYHRCS001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS002I.resx">
+      <DependentUpon>TYHRCS002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS003S.resx">
+      <DependentUpon>TYHRCS003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS004R.resx">
+      <DependentUpon>TYHRCS004R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS004S.resx">
+      <DependentUpon>TYHRCS004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS005I.resx">
+      <DependentUpon>TYHRCS005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRCS005S.resx">
+      <DependentUpon>TYHRCS005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES001B.resx">
+      <DependentUpon>TYHRES001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES001S.resx">
+      <DependentUpon>TYHRES001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES002B.resx">
+      <DependentUpon>TYHRES002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES002S.resx">
+      <DependentUpon>TYHRES002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES003S.resx">
+      <DependentUpon>TYHRES003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES004B.resx">
+      <DependentUpon>TYHRES004B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES004S.resx">
+      <DependentUpon>TYHRES004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES005S.resx">
+      <DependentUpon>TYHRES005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES006B.resx">
+      <DependentUpon>TYHRES006B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES006I.resx">
+      <DependentUpon>TYHRES006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES006S.resx">
+      <DependentUpon>TYHRES006S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES007B.resx">
+      <DependentUpon>TYHRES007B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES007I.resx">
+      <DependentUpon>TYHRES007I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES007S.resx">
+      <DependentUpon>TYHRES007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES008S.resx">
+      <DependentUpon>TYHRES008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES100S.resx">
+      <DependentUpon>TYHRES100S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES101S.resx">
+      <DependentUpon>TYHRES101S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRES102S.resx">
+      <DependentUpon>TYHRES102S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR001B.resx">
+      <DependentUpon>TYHRFR001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR001I.resx">
+      <DependentUpon>TYHRFR001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR001S.resx">
+      <DependentUpon>TYHRFR001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR002I.resx">
+      <DependentUpon>TYHRFR002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR002S.resx">
+      <DependentUpon>TYHRFR002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR01C1.resx">
+      <DependentUpon>TYHRFR01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRFR02C1.resx">
+      <DependentUpon>TYHRFR02C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB001I.resx">
+      <DependentUpon>TYHRGB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB001R.resx">
+      <DependentUpon>TYHRGB001R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB001S.resx">
+      <DependentUpon>TYHRGB001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB002I.resx">
+      <DependentUpon>TYHRGB002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB002S.resx">
+      <DependentUpon>TYHRGB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB003I.resx">
+      <DependentUpon>TYHRGB003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB003R.resx">
+      <DependentUpon>TYHRGB003R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB003R1.resx">
+      <DependentUpon>TYHRGB003R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB003S.resx">
+      <DependentUpon>TYHRGB003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB005R.resx">
+      <DependentUpon>TYHRGB005R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB005S.resx">
+      <DependentUpon>TYHRGB005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGB01C1.resx">
+      <DependentUpon>TYHRGB01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT001B.resx">
+      <DependentUpon>TYHRGT001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT001S.resx">
+      <DependentUpon>TYHRGT001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT002B.resx">
+      <DependentUpon>TYHRGT002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT002I.resx">
+      <DependentUpon>TYHRGT002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT002S.resx">
+      <DependentUpon>TYHRGT002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT003B.resx">
+      <DependentUpon>TYHRGT003B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT003I.resx">
+      <DependentUpon>TYHRGT003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT003S.resx">
+      <DependentUpon>TYHRGT003S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT004I.resx">
+      <DependentUpon>TYHRGT004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT004S.resx">
+      <DependentUpon>TYHRGT004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT005I.resx">
+      <DependentUpon>TYHRGT005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT005P.resx">
+      <DependentUpon>TYHRGT005P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT006B.resx">
+      <DependentUpon>TYHRGT006B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT007R.resx">
+      <DependentUpon>TYHRGT007R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT007S.resx">
+      <DependentUpon>TYHRGT007S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT008S.resx">
+      <DependentUpon>TYHRGT008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT009I.resx">
+      <DependentUpon>TYHRGT009I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT009R.resx">
+      <DependentUpon>TYHRGT009R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT009S.resx">
+      <DependentUpon>TYHRGT009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT010I.resx">
+      <DependentUpon>TYHRGT010I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT010S.resx">
+      <DependentUpon>TYHRGT010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT011S.resx">
+      <DependentUpon>TYHRGT011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT012S.resx">
+      <DependentUpon>TYHRGT012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT02C1.resx">
+      <DependentUpon>TYHRGT02C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT10C1.resx">
+      <DependentUpon>TYHRGT10C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB001I.resx">
+      <DependentUpon>TYHRKB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB002I.resx">
+      <DependentUpon>TYHRKB002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB002P.resx">
+      <DependentUpon>TYHRKB002P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB002S.resx">
+      <DependentUpon>TYHRKB002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB004S.resx">
+      <DependentUpon>TYHRKB004S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB005B.resx">
+      <DependentUpon>TYHRKB005B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB006B.resx">
+      <DependentUpon>TYHRKB006B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB008I.resx">
+      <DependentUpon>TYHRKB008I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB008R.resx">
+      <DependentUpon>TYHRKB008R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB008S.resx">
+      <DependentUpon>TYHRKB008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB009S.resx">
+      <DependentUpon>TYHRKB009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB010S.resx">
+      <DependentUpon>TYHRKB010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB011I.resx">
+      <DependentUpon>TYHRKB011I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB011S.resx">
+      <DependentUpon>TYHRKB011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB012B.resx">
+      <DependentUpon>TYHRKB012B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB013I.resx">
+      <DependentUpon>TYHRKB013I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB013S.resx">
+      <DependentUpon>TYHRKB013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB016P.resx">
+      <DependentUpon>TYHRKB016P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB016R.resx">
+      <DependentUpon>TYHRKB016R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017B.resx">
+      <DependentUpon>TYHRKB017B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017I.resx">
+      <DependentUpon>TYHRKB017I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017R.resx">
+      <DependentUpon>TYHRKB017R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017R3.resx">
+      <DependentUpon>TYHRKB017R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017S.resx">
+      <DependentUpon>TYHRKB017S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB018B.resx">
+      <DependentUpon>TYHRKB018B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB018I.resx">
+      <DependentUpon>TYHRKB018I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB018P.resx">
+      <DependentUpon>TYHRKB018P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB018S.resx">
+      <DependentUpon>TYHRKB018S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB019I.resx">
+      <DependentUpon>TYHRKB019I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB019S.resx">
+      <DependentUpon>TYHRKB019S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB020I.resx">
+      <DependentUpon>TYHRKB020I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB020S.resx">
+      <DependentUpon>TYHRKB020S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB021I.resx">
+      <DependentUpon>TYHRKB021I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB021R.resx">
+      <DependentUpon>TYHRKB021R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB021S.resx">
+      <DependentUpon>TYHRKB021S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB022I.resx">
+      <DependentUpon>TYHRKB022I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB022P.resx">
+      <DependentUpon>TYHRKB022P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB022R.resx">
+      <DependentUpon>TYHRKB022R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB022S.resx">
+      <DependentUpon>TYHRKB022S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB023I.resx">
+      <DependentUpon>TYHRKB023I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB023R.resx">
+      <DependentUpon>TYHRKB023R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB023S.resx">
+      <DependentUpon>TYHRKB023S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C1.resx">
+      <DependentUpon>TYHRKB02C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C2.resx">
+      <DependentUpon>TYHRKB02C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C3.resx">
+      <DependentUpon>TYHRKB02C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C4.resx">
+      <DependentUpon>TYHRKB02C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C5.resx">
+      <DependentUpon>TYHRKB02C5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C6.resx">
+      <DependentUpon>TYHRKB02C6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C7.resx">
+      <DependentUpon>TYHRKB02C7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C8.resx">
+      <DependentUpon>TYHRKB02C8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02C9.resx">
+      <DependentUpon>TYHRKB02C9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB02P1.resx">
+      <DependentUpon>TYHRKB02P1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB03C1.resx">
+      <DependentUpon>TYHRKB03C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB03C2.resx">
+      <DependentUpon>TYHRKB03C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB18C1.resx">
+      <DependentUpon>TYHRKB18C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB19C1.resx">
+      <DependentUpon>TYHRKB19C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT001B.resx">
+      <DependentUpon>TYHRNT001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT001I.resx">
+      <DependentUpon>TYHRNT001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT001P.resx">
+      <DependentUpon>TYHRNT001P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT001S.resx">
+      <DependentUpon>TYHRNT001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT002I.resx">
+      <DependentUpon>TYHRNT002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT002R1.resx">
+      <DependentUpon>TYHRNT002R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT002R2.resx">
+      <DependentUpon>TYHRNT002R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT002S.resx">
+      <DependentUpon>TYHRNT002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003B.resx">
+      <DependentUpon>TYHRNT003B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003I.resx">
+      <DependentUpon>TYHRNT003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003R1.resx">
+      <DependentUpon>TYHRNT003R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003R2.resx">
+      <DependentUpon>TYHRNT003R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003R3.resx">
+      <DependentUpon>TYHRNT003R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT003R4.resx">
+      <DependentUpon>TYHRNT003R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT004I.resx">
+      <DependentUpon>TYHRNT004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT005B.resx">
+      <DependentUpon>TYHRNT005B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT010S.resx">
+      <DependentUpon>TYHRNT010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT011S.resx">
+      <DependentUpon>TYHRNT011S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT012S.resx">
+      <DependentUpon>TYHRNT012S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT013S.resx">
+      <DependentUpon>TYHRNT013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT014S.resx">
+      <DependentUpon>TYHRNT014S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C1.resx">
+      <DependentUpon>TYHRNT01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C2.resx">
+      <DependentUpon>TYHRNT01C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C3.resx">
+      <DependentUpon>TYHRNT01C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C4.resx">
+      <DependentUpon>TYHRNT01C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C5.resx">
+      <DependentUpon>TYHRNT01C5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C6.resx">
+      <DependentUpon>TYHRNT01C6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C7.resx">
+      <DependentUpon>TYHRNT01C7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT02C4.resx">
+      <DependentUpon>TYHRNT02C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT02C1.resx">
+      <DependentUpon>TYHRNT02C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT02C2.resx">
+      <DependentUpon>TYHRNT02C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT02C3.resx">
+      <DependentUpon>TYHRNT02C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT04C1.resx">
+      <DependentUpon>TYHRNT04C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPR001B.resx">
+      <DependentUpon>TYHRPR001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPR002I.resx">
+      <DependentUpon>TYHRPR002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPR003B.resx">
+      <DependentUpon>TYHRPR003B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY001I.resx">
+      <DependentUpon>TYHRPY001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY003I.resx">
+      <DependentUpon>TYHRPY003I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY004I.resx">
+      <DependentUpon>TYHRPY004I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY005I.resx">
+      <DependentUpon>TYHRPY005I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY005P.resx">
+      <DependentUpon>TYHRPY005P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY005S.resx">
+      <DependentUpon>TYHRPY005S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY006I.resx">
+      <DependentUpon>TYHRPY006I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY006P.resx">
+      <DependentUpon>TYHRPY006P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY007P.resx">
+      <DependentUpon>TYHRPY007P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY008I.resx">
+      <DependentUpon>TYHRPY008I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY008S.resx">
+      <DependentUpon>TYHRPY008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY009I.resx">
+      <DependentUpon>TYHRPY009I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY009S.resx">
+      <DependentUpon>TYHRPY009S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY010I.resx">
+      <DependentUpon>TYHRPY010I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY010P.resx">
+      <DependentUpon>TYHRPY010P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY010S.resx">
+      <DependentUpon>TYHRPY010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY011B.resx">
+      <DependentUpon>TYHRPY011B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY012P.resx">
+      <DependentUpon>TYHRPY012P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY013S.resx">
+      <DependentUpon>TYHRPY013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY014P.resx">
+      <DependentUpon>TYHRPY014P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY014S.resx">
+      <DependentUpon>TYHRPY014S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY015I.resx">
+      <DependentUpon>TYHRPY015I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY016S.resx">
+      <DependentUpon>TYHRPY016S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY018S.resx">
+      <DependentUpon>TYHRPY018S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY019S.resx">
+      <DependentUpon>TYHRPY019S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY01C1.resx">
+      <DependentUpon>TYHRPY01C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY01C2.resx">
+      <DependentUpon>TYHRPY01C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY020S.resx">
+      <DependentUpon>TYHRPY020S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY021S.resx">
+      <DependentUpon>TYHRPY021S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY022I.resx">
+      <DependentUpon>TYHRPY022I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY022S.resx">
+      <DependentUpon>TYHRPY022S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY023S.resx">
+      <DependentUpon>TYHRPY023S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY024B.resx">
+      <DependentUpon>TYHRPY024B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY024S.resx">
+      <DependentUpon>TYHRPY024S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY04C1.resx">
+      <DependentUpon>TYHRPY04C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY05C1.resx">
+      <DependentUpon>TYHRPY05C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY05C2.resx">
+      <DependentUpon>TYHRPY05C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY05C3.resx">
+      <DependentUpon>TYHRPY05C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY05C4.resx">
+      <DependentUpon>TYHRPY05C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY05C5.resx">
+      <DependentUpon>TYHRPY05C5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY06C1.resx">
+      <DependentUpon>TYHRPY06C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY06C2.resx">
+      <DependentUpon>TYHRPY06C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY06C3.resx">
+      <DependentUpon>TYHRPY06C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY06C4.resx">
+      <DependentUpon>TYHRPY06C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY06C5.resx">
+      <DependentUpon>TYHRPY06C5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY08C1.resx">
+      <DependentUpon>TYHRPY08C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY10C1.resx">
+      <DependentUpon>TYHRPY10C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12C1.resx">
+      <DependentUpon>TYHRPY12C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12R1.resx">
+      <DependentUpon>TYHRPY12R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12R2.resx">
+      <DependentUpon>TYHRPY12R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY14C1.resx">
+      <DependentUpon>TYHRPY14C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY23C1.resx">
+      <DependentUpon>TYHRPY23C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSB001B.resx">
+      <DependentUpon>TYHRSB001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSB001I.resx">
+      <DependentUpon>TYHRSB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSB001R.resx">
+      <DependentUpon>TYHRSB001R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSB001S.resx">
+      <DependentUpon>TYHRSB001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSJ001I.resx">
+      <DependentUpon>TYHRSJ001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSJ001S.resx">
+      <DependentUpon>TYHRSJ001S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSJ002B.resx">
+      <DependentUpon>TYHRSJ002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSJ002I.resx">
+      <DependentUpon>TYHRSJ002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRSJ002S.resx">
+      <DependentUpon>TYHRSJ002S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRYB001B.resx">
+      <DependentUpon>TYHRYB001B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRYB001I.resx">
+      <DependentUpon>TYHRYB001I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRYB001P.resx">
+      <DependentUpon>TYHRYB001P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRYB001R.resx">
+      <DependentUpon>TYHRYB001R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12R3.resx">
+      <DependentUpon>TYHRPY12R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB002B.resx">
+      <DependentUpon>TYHRKB002B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017R1.resx">
+      <DependentUpon>TYHRKB017R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C8.resx">
+      <DependentUpon>TYHRNT01C8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12R4.resx">
+      <DependentUpon>TYHRPY12R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRGT013S.resx">
+      <DependentUpon>TYHRGT013S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB03C3.resx">
+      <DependentUpon>TYHRKB03C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB020B.resx">
+      <DependentUpon>TYHRKB020B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRPY12R5.resx">
+      <DependentUpon>TYHRPY12R5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB024S.resx">
+      <DependentUpon>TYHRKB024S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB024I.resx">
+      <DependentUpon>TYHRKB024I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB017R2.resx">
+      <DependentUpon>TYHRKB017R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB24C1.resx">
+      <DependentUpon>TYHRKB24C1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRKB24C2.resx">
+      <DependentUpon>TYHRKB24C2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT01C9.resx">
+      <DependentUpon>TYHRNT01C9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYHRNT006B.resx">
+      <DependentUpon>TYHRNT006B.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+    <None Include="TY.ER.HR00_key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow_right_over.png" />
+    <None Include="Resources\create.png" />
+    <Content Include="Resources\drive_disk.png" />
+    <Content Include="Resources\nophoto.gif" />
+    <None Include="Resources\pdf.gif" />
+    <Content Include="Resources\stamp1.jpg" />
+    <Content Include="Resources\stamp2.jpg" />
+    <Content Include="Resources\s_search.gif" />
+    <None Include="Resources\s_search1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

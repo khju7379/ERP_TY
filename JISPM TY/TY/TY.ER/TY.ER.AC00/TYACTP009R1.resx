@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WPAYAMOUNT1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN1.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM1.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM2.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN2.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM3.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN3.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM4.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN4.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM5.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN5.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM6.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN6.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM7.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN7.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM8.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN8.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM9.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN9.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM10.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN10.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM11.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN11.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM12.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN12.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM13.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN13.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM14.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN14.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM15.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN15.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM16.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN16.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM17.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN17.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM18.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN18.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBNNM19.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN19.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN20.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM20.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WSNRURTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN21.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM21.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WSNRURTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN22.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM22.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WSNRURTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN23.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM23.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WSNRURTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPEOPLE24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYGUBN24.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM24.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBNNM25.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPAYGUBN25.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WPEOPLE25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WPAYAMOUNT25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHINCTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHRURTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WCHADDTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDNINCTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNINCTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WSNRURTAX25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WJMISTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WJGIRTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WJDEDTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDGENTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDTRUTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDMERGTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WNMEDTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WNNOWTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WNNEXTTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WNREFTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDBANKTAX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="WDETAILGB.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WREFUNDGB.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="WSUCCESGB.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

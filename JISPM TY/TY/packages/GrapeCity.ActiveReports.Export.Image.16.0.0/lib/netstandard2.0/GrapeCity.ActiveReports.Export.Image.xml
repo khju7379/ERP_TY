@@ -1,0 +1,1398 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GrapeCity.ActiveReports.Export.Image</name>
+    </assembly>
+    <members>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme">
+            <summary>
+            Used to specify the compression schemed used in the resulting tiff image of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport"/> component.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme.None">
+            <summary>
+            Specifies no compression.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme.Rle">
+            <summary>
+            Specifies the RLE compression scheme
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme.Ccitt3">
+            <summary>
+            Specifies the CCITT3 compression scheme.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme.Ccitt4">
+            <summary>
+            Specifies the CCITT4 compression scheme.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme.Lzw">
+            <summary>
+            Specifies the LZW compression scheme. This compression can be used for for 1, 4, and 8 bit color depths.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.DescriptionRes">
+            <summary>
+            base class for Description Attribute
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.DescriptionRes.Description">
+            <summary>
+            Description for Resource
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.ResCategoryAttribute">
+            <summary>
+            ResCategoryAttribute overrides and provides an implementation of the CategoryAttribute class's GetLocalizedString method.
+            This class aids in localizing.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.ResCategoryAttribute.#ctor(System.String)">
+            <summary>
+            The Category the property should be in.
+            </summary>
+            <param name="category">The LocalStrings key to be used as the category key.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.ResCategoryAttribute.GetLocalizedString(System.String)">
+            <summary>
+            Returns the localized Category string.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport">
+            <summary>
+            ActiveReports Tag Image File Format (TIFF) Export Component.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.CompressionSchemeDefault">
+            <summary>
+            Default value for the CompressionScheme property.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.DitherDefault">
+            <summary>
+            Default value for the Dither property.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport"/> class.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.CompressionScheme">
+            <summary>
+            Specifies the compression scheme to be used when exporting a TIFF file.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Dither">
+            <summary>
+            Specifies whether the image should be dithered when saving to a black and white output format such as CCITT3.  
+            If <see cref="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.CompressionScheme"/> is RLE or None (indicating color output) this property has no effect.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.DpiX">
+            <summary>
+            Get or set the horizonal resolution value when exporting a TIFF.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.DpiY">
+            <summary>
+            Get or set the vertical resolution value when exporting a TIFF.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Pagination">
+            <summary>
+            Gets or sets the value indicates should pagination be used for resulted TIFF document or not
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String,System.String)">
+            <summary>
+            Exports the specified document to a TIFF file.
+            </summary>
+            <param name="document">
+            The ActiveReports Document object to export.
+            </param>
+            <param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+            <param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String)">
+            <summary>
+            Exports the specified document to a TIFF file.
+            </summary>
+            <param name="document">
+            The ActiveReports Document object to export.
+            </param>
+            <param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream)">
+            <summary>
+            Exports the specified document to the specified stream in TIFF.
+            </summary>
+            <param name="document">
+            The ActiveReports Document object to export.
+            </param>
+            <param name="outputStream">The Stream to write the RTF to.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream,System.String)">
+            <summary>
+            Exports the specified document to the specified stream in TIFF.
+            </summary>
+            <param name="document">
+            The ActiveReports Document object to export.
+            </param>
+            <param name="outputStream">The <see cref="T:System.IO.Stream"/> to write the TIFF data to.</param>
+            <param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.CommonExport(GrapeCity.ActiveReports.Document.SectionDocument,System.String,System.IO.Stream)">
+            <summary>
+            Performs the export logic for a document that is common to all of the export method overloads.
+            </summary>
+            <param name="document">The Document to be exported.</param>
+            <param name="pageRange">The range of pages within the document to be exported, can be null or string.empty.</param>
+            <param name="outputStream">The destination stream for the TIFF output.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.ScalePage(System.Single,System.Single,System.Int32,System.Int32,GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme,System.Boolean)">
+            <summary>
+            Determines the scaled size of the target page based on the specified page width, height and compression scheme.
+            </summary>
+            <param name="dpiX">
+            The horizontal resolution used to convert from inches to pixels.
+            </param>
+            <param name="dpiY">
+            The vertical resolution used to convert from inches to pixels.
+            </param>
+            <param name="isLandscape">
+            If landscape is true this function will assume you want to flip the pageWidth/pageHeight values.
+            The page will be scaled as if the pageWidth is the pageHeight and pageHeight is the pageWidth.
+            </param>
+            <remarks>
+            At least some CCITT3 devices require that the output image conform to specific resolutions.
+            The page resolution should be 1728 wide 2376 heigh (pixels).
+            I did see one mention of this in the "COMMON-ISDN-API Part 1, Version 2.0". See http://www.capi.org.
+            CCITT is now www.itu.int/www.itu.org, but we have to pay 3K to read the spec :S
+            </remarks>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo">
+            <summary>
+            Used with <see cref="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.ScalePage(System.Single,System.Single,System.Int32,System.Int32,GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme,System.Boolean)"/> function.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo.PageWidthPixels">
+            New page width in pixels.
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo.PageHeightPixels">
+            New page height in pixels.
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo.ScaleFactorX">
+            Horizontal scale factor that converst old page width to new page width.
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo.ScaleFactorY">
+            Vertical scale factor that converst old page height to new page height.
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExport.PageSizeInfo.#ctor(System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the PageScaleInfo class.
+            </summary>
+            <param name="pageWidthPixels"></param>
+            <param name="pageHeightPixels"></param>
+            <param name="scaleFactorX"></param>
+            <param name="scaleFactorY"></param>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException">
+            <summary>
+            Thrown when a general TIFF export specific error occurs.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException"/> class with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The Exception instance that caused the current exception.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportException"/> class with serialized data.
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportUtil.WriteAdditionalTags(System.Drawing.Bitmap,GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme)">
+            <summary>
+            writes additional tags requred for some devices 		
+            </summary>
+            <param name="image"></param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportUtil.UpdateAddtionalTagsManually(System.IO.Stream,GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme)">
+            <summary>
+            Update the temp t4options/t6options to real tag.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportUtil.UpdateAddtionalTagsManually(System.IO.Stream,System.Int32,System.Int32)">
+            <summary>
+            Update the temp tag 6292 to 292. According to the tiff spec http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf.
+            The tempTag should larger than realTag.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Tiff.Section.TiffExportUtil.ShouldUpdateAdditionalTagsManually(GrapeCity.ActiveReports.Export.Image.Tiff.Section.CompressionScheme)">
+            <summary>
+            case 168542.Some tags are not generated in windows 2008 R2 and windows7, we should add them manually.
+            Also interest to the special compression secheme which will add the following tags:
+            1) 292 (T4Options)
+            2) 293 (T6Options)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding">
+            <summary>
+            Provides functionality for Image Encoders &amp; Decoders.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding.GetImageCodecInfo(System.String)">
+            <summary>
+            Gets an Image encoder with the specified mimeType such as "image/jpeg".
+            </summary>
+            <param name="mimeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding.CreateEncoderParamQuality(System.Int64)">
+            <summary>
+            Returns an EncoderParameter that specifies image Quality used for encoders.  Used with Image.Save.
+            </summary>
+            <param name="qualityValue">
+            Value must be in the range 1-100.
+            </param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding.CreateEncoderParamCompression(System.Drawing.Imaging.EncoderValue)">
+            <summary>
+            Returns an EncoderParameter that specifies a type of Compression used for encoders. Used with Image.Save.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding.CreateEncoderParamTiffFrame(System.Drawing.Imaging.EncoderValue)">
+            <summary>
+            Creates and returns an EncoderParameter for the SaveFlag category.  Used with the tiff encoder.
+            </summary>
+            <param name="value">Should be one of the following values: 
+            EncoderValue.Flush, EncoderValue.FrameDimensionPage, EncoderValue.LastFrame, or EncoderValue.MultiFrame.
+            </param>
+            <returns>An EncoderParameter with the specified EncoderValue set in the SaveFlag category.</returns>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.Section.Imaging.ImageEncoding.ContainsAlpha(System.Drawing.Image)">
+            <summary>
+            Returns true if the image has transparency in it.
+            </summary>
+            <param name="image">
+            The image to be tested for transparency.
+            </param>
+            <returns>True if the specified image contains any trancparency areas.</returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.Resources">
+            <summary>
+            Provides assembly resources to the containing assembly.
+            </summary>
+            <remarks>
+            The most common use of this class is to provide localized string resources for exception messages and other messages displayed to the user.
+            </remarks>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.Resources.#ctor">
+            <summary>
+            Prevents external callers from creating instances of this class.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.Resources.StringsManager">
+            <summary>
+            Returns the resource manager that string values are stored in.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.Resources.GetString(GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.ResourceKey)">
+            <summary>
+            Returns the string resource identified by the specified key.
+            </summary>
+            <param name="key">The <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.ResourceKey"/> to use to obtain the resource.</param>
+            <returns>The string resource.</returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.AssemblyResources.ResourceKey">
+            <summary>
+            Defines the keys used to return resources.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.CommonMethods">
+            <summary>
+            Summary description for CommonMethods.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension">
+            <summary>
+            Represents implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension" />. Allows to render <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> in image.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Implements <see cref="M:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)" /> method.
+            </summary>
+            <param name="report"><see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to render in image.</param>
+            <param name="streams">Implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider" /> defines target of rendered image.</param>
+            <param name="settings"><see cref="T:System.Collections.Specialized.NameValueCollection" /> of rendering settings.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection,System.Threading.CancellationToken)">
+            <summary>
+            Implements <see cref="M:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)" /> method.
+            </summary>
+            <param name="report"><see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to render in image.</param>
+            <param name="streams">Implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider" /> defines target of rendered image.</param>
+            <param name="settings"><see cref="T:System.Collections.Specialized.NameValueCollection" /> of rendering settings.</param>
+            <param name="cancel">The <see cref="T:System.Threading.CancellationToken"/> object that allows to interrupt rendering.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection,System.Threading.CancellationToken,System.IProgress{GrapeCity.ActiveReports.Rendering.Export.ProgressInfo})">
+            <summary>
+            Implements <see cref="M:GrapeCity.ActiveReports.Extensibility.Rendering.ITrackableRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection,System.Threading.CancellationToken,System.IProgress{GrapeCity.ActiveReports.Rendering.Export.ProgressInfo})" /> method.
+            </summary>
+            <param name="report"><see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to render in image.</param>
+            <param name="streams">Implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider" /> defines target of rendered image.</param>
+            <param name="settings"><see cref="T:System.Collections.Specialized.NameValueCollection" /> of rendering settings.</param>
+            <param name="cancel">The <see cref="T:System.Threading.CancellationToken"/> object that allows to interrupt rendering.</param>
+            <param name="progress">The <see cref="!:IProgress"/> is a provider for progress updates.</param>	
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.GrapeCity#ActiveReports#Extensibility#Rendering#IRenderingExtension#Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+            <summary>
+            Implements <see cref="M:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)" /> method.
+            </summary>
+            <param name="report"><see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to render in image.</param>
+            <param name="streams">Implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider" /> defines target of rendered image.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.GetSupportedSettings">
+            <summary>
+            Returns settings of current <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension" /> instance.
+            </summary>
+            <returns>settings of current <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension" /> instance.</returns>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension.GetSupportedSettings(System.Boolean)">
+            <summary>
+            Returns settings of current <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension" /> instance.
+            </summary>
+            <returns>settings of current <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension" /> instance.</returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.Renderers.Compression">
+            <summary>
+            Compression of rendered Tiff image.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.Compression.Ccitt3">
+            <summary>
+            CCITT3
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.Compression.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.Compression.Rle">
+            <summary>
+            RLE
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.Compression.Lzw">
+            <summary>
+            LZW
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType">
+            <summary>
+            Represents Image types supported by <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension"/>.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType.BMP">
+            <summary>
+            BMP
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType.GIF">
+            <summary>
+            GIF
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType.JPEG">
+            <summary>
+            JPEG
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType.TIFF">
+            <summary>
+            Tiff
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.Renderers.ImageType.PNG">
+            <summary>
+            PNG
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.Settings">
+            <summary>
+            Represents settings for <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension"/>.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.Settings"/> class.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.#ctor(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Initializes new instance of <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.Settings"/> class with specified settings.
+            </summary>
+            <param name="settings"><see cref="T:System.Collections.Specialized.NameValueCollection"/> of specified settings.</param>
+            <param name="fpl">FPL flag</param>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.Pagination">
+            <summary>
+            By default, each page of a report is rendered as a separate image. Set this value to False to render the entire report as a single image.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.ImageType">
+            <summary>
+            Select the type of image to which you want to render the report. Supported types are BMP, GIF, JPEG, TIFF, and PNG.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.MarginLeft">
+            <summary>
+            Set the value in inches to use for the left margin of the image. 
+            The format is an integer or decimal with "in" as the suffix, for example "1in" for 1 inch. By default, no margins are used. 
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.MarginTop">
+            <summary>
+            Set the value in inches to use for the top margin of the image. 
+            The format is an integer or decimal with "in" as the suffix, for example "1in" for 1 inch. By default, no margins are used.
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.MarginRight">
+            <summary>
+            Set the value in inches to use for the right margin of the image.
+            The format is an integer or decimal with "in" as the suffix, for example "1in" for 1 inch. By default, no margins are used.
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.MarginBottom">
+            <summary>
+            Set the value in inches to use for the bottom margin of the image.
+            The format is an integer or decimal with "in" as the suffix, for example "1in" for 1 inch. By default, no margins are used.
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.DpiX">
+            <summary>
+            Adjust the horizontal resolution of rendered images. The default value is 200.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.DpiY">
+            <summary>
+            Adjust the vertical resolution of rendered images. The default value is 200.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.Compression">
+            <summary>
+            Sets or returns a value which specifies the compression to be used when exporting.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.Quality">
+            <summary>
+            Gets or sets the quality of the report to be rendered as an image.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.StartPage">
+            <summary>
+            The default value of zero in this and the EndPage properties render all of the report pages to images. 
+            Otherwise, set this value to the number of the first page to render.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.EndPage">
+            <summary>
+            The default value of 0 in this property renders all of the report pages. 
+            Otherwise, set this value to the number of the last page to render. 
+            Please note that if the StartPage property is set to 0, all of the pages of the report render. 
+            In order to use the EndPage property, you must set the StartPage property to a valid non-zero number.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.PageHeight">
+            <summary>
+            Set the value in inches to use for the height of the image. 
+            The format is an integer or decimal with "in" as the suffix, for example "11in" for 11 inches. 
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.PageWidth">
+            <summary>
+            Set the value in inches to use for the width of the image. 
+            The format is an integer or decimal with "in" as the suffix, for example "8in" for 8 inches. 
+            The value set in this property overrides the report's settings.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkTitle">
+            <summary>
+            Sets text (i.e. CONFIDENTIAL) to use as the watermark on the image.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkAngle">
+            <summary>
+            Specify the degree of angle for the watermark text on the image. Valid values range from 0 to 359, where 0 is horizontal, left to right.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkFontName">
+            <summary>
+            Set the font to use for the watermark to any valid System.Drawing.Font. 
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkFontSize">
+            <summary>
+            Sets the font size for the watermark 
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkFontStyle">
+            <summary>
+            Specifies the font style.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.WatermarkColor">
+            <summary>
+            Select a color for the watermark text on the image. The default value for the watermark color is gray, but you can select any Web, System, or Custom color.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.PrintLayoutMode">
+            <summary>
+            Select how to lay out the pages of the report in the image.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.SizeToFit">
+            <summary>
+            By default, rendered report pages are not resized to fit within the selected image size. Set this value to True to resize the report pages. 
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.Settings.Dither">
+            Specifies whether the image should be dithered when saving to a black and white output format, like CCITT3 or Rle. 
+            This property has no effect if the CompressionScheme property is set to Lzw or None(represents color output).
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.GetSettings">
+            <summary>
+            Returns settings of <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension"/>.
+            </summary>
+            <returns><see cref="T:System.Collections.Specialized.NameValueCollection"/> of <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.ImageRenderingExtension"/> settings.</returns>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.ApplySettings(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Apply settings for the rendering extension.
+            </summary>
+            <param name="settings">Settings for the rendering extension.</param>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.GetImageRenderingSettings(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.Settings.op_Implicit(GrapeCity.ActiveReports.Export.Image.Page.Settings)~System.Collections.Specialized.NameValueCollection">
+            <summary>
+            Performs an implicit conversion from <see cref="T:GrapeCity.ActiveReports.Export.Image.Page.Settings"/> to <see cref="T:System.Collections.Specialized.NameValueCollection"/>.
+            </summary>
+            <param name="settings">The rendering extension settings.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.ImageSettingsConverter">
+            <summary>
+            type converter for image settings. Shows\Hides various properties depending on image type.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.InternalConstants">
+            <summary>
+            Configuration key for target device name.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.Page.InternalConstants.OnDemandRendering">
+            <summary>
+            Actual rendering will be deffered and will be done per-page via corresponding method.
+            Valid only for Image device.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Page.TargetDeviceCapabilities">
+            <summary>
+            Encapsulates target rendering devices and its capabilities
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.TargetDeviceCapabilities.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Instantiates a rendering device by device name
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Page.TargetDeviceCapabilities.Item(GrapeCity.ActiveReports.Extensibility.Layout.Features)">
+            <summary>
+            specifies, how a particular feature is supported by device
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.TargetDeviceCapabilities.SetPageInfo(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Sets page size information based on IRenderingExtension and pagination options
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.Page.TargetDeviceCapabilities.GetMode(System.String)">
+            <summary>
+            Determines option mode from a string param.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.MonochromeBitmapTool">
+            <summary>
+            Provides a public function for creating a 1 bit per pixel bitmap.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.MonochromeBitmapTool.RgbBmpTo1BppIndexed(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            Converts the specified Image object to a one bit per pixel (monchrome) indexed bitmap.
+            </summary>
+            <param name="bitmapSource">The source bitmap to be converted to a <see cref="F:System.Drawing.Imaging.PixelFormat.Format1bppIndexed"/>.</param>
+            <param name="dither">
+            True indicates a dithering algorithm should be used to improve the color conversion.
+            </param>
+            <returns>
+            A bitmap converted to monochrome with PixelFormat of 1bppIndexed.
+            </returns>
+            <remarks>
+            When using dithering, multiple colors typically show up better, but file size will increase.
+            This method contains unsafe code. The caller is responsible for disposing the returned bitmap.
+            This method has an unsafe code block, in order to use <see cref="M:System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat)"/> and the returned <see cref="P:System.Drawing.Imaging.BitmapData.Scan0"/> so this method is marked with <see cref="T:System.Security.SuppressUnmanagedCodeSecurityAttribute"/> to prevent a full call stack walk and according to the documentation significantly improve performance.
+            </remarks>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.MonochromeBitmapTool.ODITHER_SIZE">
+            <summary>
+            Dimension of dither matrix
+            </summary>
+            <remarks>NB: if ODITHER_SIZE is not a power of 2, ODITHER_MASK uses will break</remarks>
+        </member>
+        <member name="F:GrapeCity.ActiveReports.Export.Image.MonochromeBitmapTool.base_dither_matrix">
+            <summary>
+            Bayer's order-4 dither array.  Generated by the code given in 
+            Stephen Hawley's article "Ordered Dithering" in Graphics Gems I.
+            The values in this array must range from 0 to ODITHER_CELLS-1.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.ActiveReports.Export.Image.MonochromeBitmapTool.Dither(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            Performs a simple ordered dithering algorithm to simulate greyscale in a monochrome (1 bit per pixel) image.
+            </summary>
+            <param name="x">The x location of the pixel.</param>
+            <param name="y">The y location of the pixel.</param>
+            <param name="level">Level should be r+g+b.</param>
+            <returns>Either 1 or zero indicating the pixel should be black or white based on the dither matrix.</returns>
+            <remarks>See Graphics Gems I for detailed information about our dithering algorithm.</remarks>
+        </member>
+        <member name="T:GrapeCity.ActiveReports.Export.Image.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ArgumentCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to Argument cannot be empty..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.BadRelativePath">
+            <summary>
+              Looks up a localized string similar to There was a problem converting the specified file path to an absolute file path..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.BigTiffExceptionMessage">
+            <summary>
+              Looks up a localized string similar to It seems what report is too big for uncompressed tiff, try to change CompressionSchemeProperty from None.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Category_TiffExport_CompressionScheme">
+            <summary>
+              Looks up a localized string similar to ActiveReports.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Category_TiffExport_Dither">
+            <summary>
+              Looks up a localized string similar to ActiveReports.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Category_TiffExport_DpiX">
+            <summary>
+              Looks up a localized string similar to ActiveReports.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Category_TiffExport_DpiY">
+            <summary>
+              Looks up a localized string similar to ActiveReports.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ColorDepthName">
+            <summary>
+              Looks up a localized string similar to ColorDepth.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Compression_Ccitt3">
+            <summary>
+              Looks up a localized string similar to Ccitt3.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Compression_Lzw">
+            <summary>
+              Looks up a localized string similar to Lzw.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Compression_None">
+            <summary>
+              Looks up a localized string similar to None.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Compression_Rle">
+            <summary>
+              Looks up a localized string similar to Rle.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.CompressionName">
+            <summary>
+              Looks up a localized string similar to Compression.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Create_Bitmap_Exception">
+            <summary>
+              Looks up a localized string similar to The size of the bitmap is too large that there is not enough memory in system can be allocated to the bitmap..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.DataVisualizerResourceNotFound">
+            <summary>
+              Looks up a localized string similar to DataVisualizer &apos;{0}&apos; cannot find {1} resource(s) &apos;{2}&apos;.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport">
+            <summary>
+              Looks up a localized string similar to ActiveReports Tag Image File Format (TIFF) Export Component.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport_CompressionScheme">
+            <summary>
+              Looks up a localized string similar to Specifies the compression scheme to be used when exporting a TIFF file..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport_Dither">
+            <summary>
+              Looks up a localized string similar to Specifies whether the image should be dithered when saving to a black and white output format such as CCITT3.  .
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport_DpiX">
+            <summary>
+              Looks up a localized string similar to Get or set the horizonal resolution value when exporting a TIFF..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport_DpiY">
+            <summary>
+              Looks up a localized string similar to Get or set the vertical resolution value when exporting a TIFF..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Description_TiffExport_Pagination">
+            <summary>
+              Looks up a localized string similar to Gets or sets the value indicates should pagination be used for resulted TIFF document or not.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.DitherName">
+            <summary>
+              Looks up a localized string similar to Dither.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.DpiXName">
+            <summary>
+              Looks up a localized string similar to DpiX.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.DpiYName">
+            <summary>
+              Looks up a localized string similar to DpiY.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Draw_Bitmap_Exception">
+            <summary>
+              Looks up a localized string similar to The size of the bitmap is too large that there is not enough memory in system can be used to draw the report on the bitmap..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.EndPageName">
+            <summary>
+              Looks up a localized string similar to EndPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ErrorPreparingDocument">
+            <summary>
+              Looks up a localized string similar to An unexpected error occurred preparing the Document object for export..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.False">
+            <summary>
+              Looks up a localized string similar to False.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_ColorDepth">
+            <summary>
+              Looks up a localized string similar to Select the number of bits per pixel for PNG and BMP rendered images. The default value is 8, but you can choose 1, 4, 16, 24, 32, or 64 bits..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_Compression">
+            <summary>
+              Looks up a localized string similar to Select the type of compression to use for reports rendered as TIFF images..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_Dither">
+            <summary>
+              Looks up a localized string similar to Specify whether a TIFF image is dithered for black and white. If the Compression property is Lzw or None (indicating color output) this property has no effect..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_DpiX">
+            <summary>
+              Looks up a localized string similar to Adjust the horizontal resolution of rendered images. The default value is 200..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_DpiY">
+            <summary>
+              Looks up a localized string similar to Adjust the vertical resolution of rendered images. The default value is 200..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_EndPage">
+            <summary>
+              Looks up a localized string similar to The default value of zero in this and the StartPage properties render all of the report pages. Otherwise, set this value to the number of the last page to render..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_ImageType">
+            <summary>
+              Looks up a localized string similar to Select the type of image to which you want to render the report..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_LayoutMode">
+            <summary>
+              Looks up a localized string similar to Select how to lay out the pages of the report in the image..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_MarginBottom">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 0.5in) for the space between the bottom of the report and the edge of the page. This overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_MarginLeft">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 0.5in) for the space between the left edge of the report and the edge of the page. This overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_MarginRight">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 0.5in) for the space between the right edge of the report and the edge of the page. This overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_MarginTop">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 0.5in) for the space between the top of the report and the edge of the page. This overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_PageHeight">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 11in) to set the height of the report&apos;s pages. This value overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_PageWidth">
+            <summary>
+              Looks up a localized string similar to Enter a value in inches (i.e. 8.5in) to set the width of the report&apos;s pages. This value overrides the report&apos;s original settings..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_Pagination">
+            <summary>
+              Looks up a localized string similar to Set this value to False to render the entire report as a single image. A value of True renders each page of the report as a separate image..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_Quality">
+            <summary>
+              Looks up a localized string similar to Specify the quality to use for a report rendered as a JPEG image. Values range from 1 to 100 percent..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_SizeToFit">
+            <summary>
+              Looks up a localized string similar to Set this value to True to resize the report pages. A value of False does not resize the pages to fit the selected PageHeight and Width..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_StartPage">
+            <summary>
+              Looks up a localized string similar to The default value of zero in this and the EndPage properties render all of the report pages. Otherwise, set this value to the number of the first page to render..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkAngle">
+            <summary>
+              Looks up a localized string similar to Specify the degree of angle for the watermark text on the image. Valid values range from 0 to 359, where 0 is horizontal, left to right..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkColor">
+            <summary>
+              Looks up a localized string similar to Select a color for the watermark text on the image. The default value for the watermark color is gray, but you can select any Web, System, or Custom color..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkFont">
+            <summary>
+              Looks up a localized string similar to Sets the font to use for the watermark to any valid System.Drawing.Font..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkFontSize">
+            <summary>
+              Looks up a localized string similar to Sets the font size for the watermark.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkFontStyle">
+            <summary>
+              Looks up a localized string similar to Specifies the font style..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Image_WatermarkTitle">
+            <summary>
+              Looks up a localized string similar to Enter text (i.e. CONFIDENTIAL) to use as the watermark on the image..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_BMP">
+            <summary>
+              Looks up a localized string similar to BMP.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_EMF">
+            <summary>
+              Looks up a localized string similar to EMF.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_GIF">
+            <summary>
+              Looks up a localized string similar to GIF.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_JPEG">
+            <summary>
+              Looks up a localized string similar to JPEG.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_PNG">
+            <summary>
+              Looks up a localized string similar to PNG.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_TIFF">
+            <summary>
+              Looks up a localized string similar to TIFF.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageType_XML">
+            <summary>
+              Looks up a localized string similar to XML.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.ImageTypeName">
+            <summary>
+              Looks up a localized string similar to ImageType.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.Invalid_Resolution_Value_Exception">
+            <summary>
+              Looks up a localized string similar to The value of this property should be greater than zero..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.LastPageLessStartPage">
+            <summary>
+              Looks up a localized string similar to EndPage should be greater than or equal to StartPage, or 0..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.MarginBottomName">
+            <summary>
+              Looks up a localized string similar to MarginBottom.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.MarginLeftName">
+            <summary>
+              Looks up a localized string similar to MarginLeft.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.MarginRightName">
+            <summary>
+              Looks up a localized string similar to MarginRight.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.MarginTopName">
+            <summary>
+              Looks up a localized string similar to MarginTop.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.NoPages">
+            <summary>
+              Looks up a localized string similar to The document contains no pages to export..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.NoPagesMessage">
+            <summary>
+              Looks up a localized string similar to No pages to render..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PageCannotBeObtainedMessage">
+            <summary>
+              Looks up a localized string similar to The current page can&apos;t be obtained.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PageHeightName">
+            <summary>
+              Looks up a localized string similar to PageHeight.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PageWidthName">
+            <summary>
+              Looks up a localized string similar to PageWidth.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PaginationName">
+            <summary>
+              Looks up a localized string similar to Pagination.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutMode_BookletMode">
+            <summary>
+              Looks up a localized string similar to BookletMode.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutMode_EightLogicalPagesOnSinglePhysicalPage">
+            <summary>
+              Looks up a localized string similar to EightLogicalPagesOnSinglePhysicalPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutMode_FourLogicalPagesOnSinglePhysicalPage">
+            <summary>
+              Looks up a localized string similar to FourLogicalPagesOnSinglePhysicalPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutMode_OneLogicalPageOnSinglePhysicalPage">
+            <summary>
+              Looks up a localized string similar to OneLogicalPageOnSinglePhysicalPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutMode_TwoLogicalPagesOnSinglePhysicalPage">
+            <summary>
+              Looks up a localized string similar to TwoLogicalPagesOnSinglePhysicalPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.PrintLayoutModeName">
+            <summary>
+              Looks up a localized string similar to PrintLayoutMode.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.QualityName">
+            <summary>
+              Looks up a localized string similar to Quality.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.SizeToFitName">
+            <summary>
+              Looks up a localized string similar to SizeToFit.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.StartPageName">
+            <summary>
+              Looks up a localized string similar to StartPage.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.StartPageOverEndPage">
+            <summary>
+              Looks up a localized string similar to StartPage should be less than or equal to EndPage, or 0..
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.True">
+            <summary>
+              Looks up a localized string similar to True.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkAngleName">
+            <summary>
+              Looks up a localized string similar to WatermarkAngle.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkColorName">
+            <summary>
+              Looks up a localized string similar to WatermarkColor.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkFontName">
+            <summary>
+              Looks up a localized string similar to WatermarkFont.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkFontSize">
+            <summary>
+              Looks up a localized string similar to WatermarkFontSize.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkFontStyle">
+            <summary>
+              Looks up a localized string similar to WatermarkFontStyle.
+            </summary>
+        </member>
+        <member name="P:GrapeCity.ActiveReports.Export.Image.Resources.WatermarkTitleName">
+            <summary>
+              Looks up a localized string similar to WatermarkTitle.
+            </summary>
+        </member>
+        <member name="T:GrapeCity.Diagnostics.InternalTracer">
+            <summary>
+            Provides a common way to trace messages that do not show up easily to our users.
+            Support personel or the developer can use the TraceSwitch in a config file (web.config for exe config) to turn tracing on and off.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.Diagnostics.InternalTracer.traceSwitchString">
+            <summary>
+            Put this string in a config file under configuration\system.diagnostics\switches\add to turn on tracing.
+            Then add a listenter under configuration\system.diagnostics\trace\listeners.
+            </summary>
+        </member>
+        <member name="F:GrapeCity.Diagnostics.InternalTracer.tracingSwitch">
+            <summary>
+            Used with this class's LogMessage method to indicate if tracing is turned on or not. 
+            I'm using guid strings to keep prying eyes from understanding what's going on, and an attempt ot prevent users from easily turning tracing on.
+            </summary>
+        </member>
+        <member name="M:GrapeCity.Diagnostics.InternalTracer.Trace(System.String)">
+            <summary>
+            Provides tracing when defined appropriately in an application configuration file.
+            </summary>
+            <param name="message">The trace message to be written to a trace listener.</param>
+            <remarks>
+            This could be used with support and an appropriate app.config file to implement tracing when output is messed up for unknown reasons.
+            I've applied these debugger attributes to it to attempt to keep it out of call stacks and debuggers stepping though it.
+            If this method is found to be a sevear performance hinderence (presumably via profiling), then we should be able to uncomment the ConditionalAttribute below and only have it included in DEBUG builds only.
+            </remarks>
+        </member>
+        <member name="M:GrapeCity.Diagnostics.InternalTracer.Trace(System.String,System.Object[])">
+            <summary>
+            Provides tracing with string.format like capabilities.
+            </summary>
+        </member>
+        <member name="T:AssemblyNames">
+            <summary>
+            Contains strong assembly names and such
+            </summary>
+        </member>
+        <member name="T:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils">
+            <summary>
+            Provides utility functions useful when parsing CanvasItem records in a Canvas/Page.
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.AreBoundsClose(System.Drawing.RectangleF,System.Drawing.RectangleF)">
+            <summary>
+            Returns true if the bounds are within 1000'th of an inch of each other.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.OutsideRect(System.Drawing.RectangleF,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Returns true if element is entirely outside rectangle. False if inside or intersecting.
+            </summary>
+            <param name="pcr">Clip rect.</param>
+            <param name="elementX">x coordinate for element.</param>
+            <param name="elementY">y coordinate for element.</param>
+            <param name="elementWidth">width for element.</param>
+            <param name="elementHeight">height for element.</param>
+            <returns>True if element is entirely outside rectangle, otherwise returns false.</returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.InsideRect(System.Drawing.RectangleF,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Returns true if the specified element is entirely inside the specified rectangle (or exactly the same bounds); false if outside or intersecting.
+            </summary>
+            <param name="pcr">Clip rect</param>
+            <param name="x">Line x coordinate.</param>
+            <param name="y">Line y coordinate.</param>
+            <param name="w">Line width.</param>
+            <param name="h">Line height.</param>
+            <returns>True if the specified element is entirely inside the specified rectangle; false if outside or intersecting.</returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.ClipLine(System.Drawing.RectangleF,GrapeCity.ActiveReports.Document.Section.LineItem@,GrapeCity.ActiveReports.Document.Section.LineItem)">
+            <summary>
+            This function takes a line and a clipping rectangle, and outputs a clipped line in the pNew argument.
+            </summary>
+            <param name="pCR">The clipping rectangle.</param>
+            <param name="pNew">The new, clipped line will be returned in this argument.</param>
+            <param name="pOld">The old line you want clipped.</param>
+            <returns>
+            Returns true when the line is entirely outside of the cliprect and therefore not renderable.  
+            If the line intersects the cliprect, then ClipLine(..) will generate a line that does fit entirely inside the cliprect and set it to pNew, and true will be returned.
+            If the line is entirely inside the cliprect, then ClipLine simply sets pNew to pOld and returns false.
+            </returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.IntersectLines(System.Drawing.PointF@,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Returns true if lines intersect, false if not, sets ppointout to point of intersection.
+            </summary>
+            <param name="ppointout">
+            If lines intersect, this will be the point of intersection.
+            </param>
+            <param name="x1">X1 coordinate for first line.</param>
+            <param name="y1">Y1 coordinate for first line.</param>
+            <param name="x2">X2 coordinate for first line.</param>
+            <param name="y2">Y2 coordinate for first line.</param>
+            <param name="x3">X1 coordinate for second line.</param>
+            <param name="y3">Y1 coordinate for second line.</param>
+            <param name="x4">X2 coordinate for second line.</param>
+            <param name="y4">Y2 coordinate for second line.</param>
+            <returns>True if lines intersect, false if not.</returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.ClipShapeBounds(System.Drawing.RectangleF@,System.Drawing.RectangleF)">
+            <summary>
+            Clips the specified bounds for a shape based on the specified clipRect.
+            </summary>
+            <param name="itemBounds">The bounds for the item. Upon return of this function this value will have the clipped bounds.</param>
+            <param name="clipRect">The clipping rectangle according to which itemBounds will be clipped.</param>
+            <returns>
+            True if the item should be rendered according to the new bounds, or false if the item should not be rendered at all.
+            </returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.ClipImage(System.Drawing.Image@,System.Drawing.RectangleF@,System.Drawing.RectangleF)">
+            <summary>
+            Clips the specified image if necessary.
+            </summary>
+            <param name="sourceImage"></param>
+            <param name="imageBounds"></param>
+            <param name="clipRect"></param>
+            <returns>
+            True if you should render the specified image.  Note that the location and actual image arguments may have been changed by this function.
+            False, indicates that you should not render the specified image due to the cliprect.  This would normally indicate that the image is entirely outside of the cliprect.
+            </returns>
+        </member>
+        <member name="F:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.DefaultPixelsPerInch">
+            <summary>
+            Number of pixels per inch used in unit default conversions. 
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.InchesToPixels(System.Single,System.Single)">
+            <summary>
+            Returns the specified inch value in pixel units.
+            </summary>
+            <param name="inches">The value in inches to convert.</param>
+            <param name="dpi">The pixels/dots per inch value to be used for the conversion.</param>
+            <returns>The value in pixels.</returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.InchesToPixels(System.Single)">
+            <summary>
+            Returns the specifed inch value in pixel units with pixels per inch/dpi value of <see cref="F:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.DefaultPixelsPerInch"/>.
+            </summary>
+            <param name="inches">The value in inches to convert.</param>
+            <returns>The value in pixels.</returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.CanvasUtils.DeflateRect(System.Drawing.RectangleF,GrapeCity.ActiveReports.PaddingEx)">
+            <summary>
+            Deflates the padding from the rect
+            </summary>
+            <param name="rect"></param>
+            <param name="padding"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DataDynamics.ActiveReports.Export.InternalC.ExportContext">
+            <summary>
+            This class is basically the same as RenderContext in ActiveReports, but customized for contextual information specific to Exports and not a Graphics.  
+            Much of the functionality is exactly the same as RenderContext.
+            However, RenderContext is tightly coupled with each of the CanvasItem's and uses CanvasItem.Render to maintain/update RenderContext, which also does rendering to a Grahpics, which is inappropriate and inefficient for Excel or any Export filter. 
+            </summary>
+            <remarks>
+            Differences between ExportContext and RenderContext:
+            - The current cliprect is manged by ExportContext here, not Graphics like RenderContext. 
+            - The ClipStack is a stack of RectangleF structs, and not System.Drawing.Drawing2D.Region.  All our clips are rectangles in RDF and I think regions were only used in RenderContext because that's what Graphics uses and rendercontext stores it's "current cliprect" on the Grahpics, not RenderContext.
+            </remarks>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.#ctor(GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage)">
+            <summary>
+            Creates an instance of the ExportContext.
+            </summary>
+            <param name="page">The DataDynamics.ActiveReports.Page object that this context is relative to. All fonts (see <see cref="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.SelectFont(System.Int16)"/>) are slected from the Page's Fonts collection.</param>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.GetDefaultFontWithPointUnit">
+            <summary>
+            Clone font for azure while sizeinpoints throw outofmemory exception.
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.PushClipRect">
+            <summary>
+            Takes the current clipRect (in CurrentClipRect property) and pushes it onto the ClipStack.  
+            The current cliprect is still maintained as the "current cliprect".
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.PopClipRect">
+            <summary>
+            Takes the last cliprect put onto the stack and sets it as the current cliprect.
+            If there are no cliprects on the stack then the current cliprect is cleared, and IsClipActive is set to false.
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.IntersectClipRect(System.Drawing.RectangleF)">
+            <summary>
+            Uses member method RectangleF.Intersect on the currentCliprect to calculate the intersecting clipping rectangle and sets that resulting clip rect as the current clip rect available via the ClipRect property.
+            </summary>
+            <param name="intersectClip">The clipping rectangle to intersect the current clipping rectangle with.</param>
+        </member>
+        <member name="P:DataDynamics.ActiveReports.Export.InternalC.ExportContext.ClipRect">
+            <summary>
+            Returns the current cliprect bounding the output device/surface.
+            </summary>
+        </member>
+        <member name="P:DataDynamics.ActiveReports.Export.InternalC.ExportContext.ClipStack">
+            <summary>
+            Returns the Stack of RectangleF structs.
+            </summary>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.Clone">
+            <summary>
+            Returns an instance of ExportContext that contains an exact replica of the data on this object.
+            ** Note this method does not copy the m_theFonts font follection.  
+            Only .Font/m_theFont. For performance reasons, and because I don't see why it's needed in most cases where you would clone this class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataDynamics.ActiveReports.Export.InternalC.ExportContext.SelectFont(System.Int16)">
+            <summary>
+            Sets the Font property's value to the font at the specified Index.
+            </summary>
+            <param name="fontIndex"></param>
+        </member>
+        <member name="P:DataDynamics.ActiveReports.Export.InternalC.ExportContext.CharacterSpacing">
+            <summary>
+            Determines the intercharacter spacing in inches
+            </summary>
+        </member>
+        <member name="P:DataDynamics.ActiveReports.Export.InternalC.ExportContext.LineSpacing">
+            <summary>
+            Determines the interline spacing in inches
+            </summary>
+        </member>
+    </members>
+</doc>

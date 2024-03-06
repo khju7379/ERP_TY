@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="REJPTITILE1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTITILE16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTITILE16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="RECHAIN.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPAMOUNT10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPAMOUNT16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTOTALSUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL27.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL28.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTOTALSUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="RECHAINSUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL29.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL30.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL31.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL32.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYTOTAL26.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO9.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO10.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO11.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO8.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO12.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REJPTOTALBUSEO.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO17.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO18.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO19.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO23.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO27.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO20.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO24.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO28.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="REGPTOTALBUSEO.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="RECHAINBUSEO.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO13.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO14.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO29.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO30.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO31.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO32.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO21.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO22.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO25.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="PSPAYBUSEO26.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{048BA9CD-9BB3-46C1-92A6-71228C1FF1C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.ER.GB00</RootNamespace>
+    <AssemblyName>GB00</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\TY.Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TY.ER.GB00_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2003.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Excel, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Html, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Image, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Image.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Rdf, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Rdf.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Word, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Xml, Version=14.0.19463.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Export.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Common, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Viewer.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Win, Version=16.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GrapeCity\ActiveReports 16\Tools\GrapeCity.ActiveReports.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="Grapecity.DataVisualization, Version=0.1.236.0, Culture=neutral, PublicKeyToken=171ec59c7733b360, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Grapecity.DataVisualization.0.1.236\lib\net462\Grapecity.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Common, Version=2.2.0.320, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GrapeCity.Documents.Common.2.2.0.320\lib\net461\GrapeCity.Documents.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Common.Windows, Version=2.2.0.320, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GrapeCity.Documents.Common.Windows.2.2.0.320\lib\net461\GrapeCity.Documents.Common.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemUtility, Version=1.0.0.1, Culture=neutral, PublicKeyToken=17fd64af4fbacfd3, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TY.Library\SystemUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB001P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB001P.Designer.cs">
+      <DependentUpon>TYERGB001P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB002I.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TYERGB002I.Designer.cs">
+      <DependentUpon>TYERGB002I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB003P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB003P.Designer.cs">
+      <DependentUpon>TYERGB003P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB004P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB004P.Designer.cs">
+      <DependentUpon>TYERGB004P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB005P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB005P.Designer.cs">
+      <DependentUpon>TYERGB005P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB006P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB006P.Designer.cs">
+      <DependentUpon>TYERGB006P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB007P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB007P.Designer.cs">
+      <DependentUpon>TYERGB007P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB009P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB009P.Designer.cs">
+      <DependentUpon>TYERGB009P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB008S.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TYERGB008S.Designer.cs">
+      <DependentUpon>TYERGB008S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB010P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB010P.Designer.cs">
+      <DependentUpon>TYERGB010P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB011P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB011P.Designer.cs">
+      <DependentUpon>TYERGB011P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB012P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB012P.Designer.cs">
+      <DependentUpon>TYERGB012P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB013P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB013P.designer.cs">
+      <DependentUpon>TYERGB013P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB021P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB021P.Designer.cs">
+      <DependentUpon>TYERGB021P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB022P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB022P.Designer.cs">
+      <DependentUpon>TYERGB022P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB023P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB023P.Designer.cs">
+      <DependentUpon>TYERGB023P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYERGB024P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TYERGB024P.Designer.cs">
+      <DependentUpon>TYERGB024P.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB001P.resx">
+      <DependentUpon>TYERGB001P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB002I.resx">
+      <DependentUpon>TYERGB002I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB003P.resx">
+      <DependentUpon>TYERGB003P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB004P.resx">
+      <DependentUpon>TYERGB004P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB005P.resx">
+      <DependentUpon>TYERGB005P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB006P.resx">
+      <DependentUpon>TYERGB006P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB007P.resx">
+      <DependentUpon>TYERGB007P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB009P.resx">
+      <DependentUpon>TYERGB009P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB008S.resx">
+      <DependentUpon>TYERGB008S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB010P.resx">
+      <DependentUpon>TYERGB010P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB011P.resx">
+      <DependentUpon>TYERGB011P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB012P.resx">
+      <DependentUpon>TYERGB012P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB013P.resx">
+      <DependentUpon>TYERGB013P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB021P.resx">
+      <DependentUpon>TYERGB021P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB022P.resx">
+      <DependentUpon>TYERGB022P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB023P.resx">
+      <DependentUpon>TYERGB023P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TYERGB024P.resx">
+      <DependentUpon>TYERGB024P.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\태영CI.png" />
+    <None Include="TY.ER.GB00_key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarMenuBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\탑메뉴bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\로고.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Launcher\TY.Service.Launcher.csproj">
+      <Project>{C33B099B-0A0D-436C-8C4A-5B1A3999FC3F}</Project>
+      <Name>TY.Service.Launcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TY.Service\TY.Service.Library\TY.Service.Library.csproj">
+      <Project>{2AE24389-3D8C-4536-810D-2E77F1DD047F}</Project>
+      <Name>TY.Service.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topmenu_bg%28h38%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topmenu_line%28h32%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftmenu_on_bg%28h31%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon_logout.png" />
+    <Content Include="Resources\icon_password.png" />
+    <Content Include="Resources\leftmenu_on_bg2%28h31%29.gif" />
+    <Content Include="Resources\txt_gap.png" />
+    <Content Include="Resources\txt_이용안내.png" />
+    <Content Include="Resources\txt_홈페이지.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

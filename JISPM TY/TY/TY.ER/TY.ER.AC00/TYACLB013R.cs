@@ -1,0 +1,150 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using GrapeCity.ActiveReports;
+using GrapeCity.ActiveReports.Document;
+using GrapeCity.ActiveReports.SectionReportModel;
+using System.Data;
+
+namespace TY.ER.AC00
+{
+    /// <summary>
+    /// Summary description for TYACLB013R.
+    /// </summary>
+    public partial class TYACLB013R : GrapeCity.ActiveReports.SectionReport
+    {
+        private DataTable dt = new DataTable();
+
+        private List<int> _boldRecords = new List<int>();
+
+        // 한 페이지에 찍을 레코드 카운트 변수
+        private int _rowCount = 0;
+
+        private int _fiCount = 0;
+        private int _iCount = 0;
+
+        private string sGroup = string.Empty;
+
+        public TYACLB013R()
+        {
+            //
+            // Required for Windows Form Designer support
+            //
+            InitializeComponent();
+        }
+
+        private void detail_Format(object sender, EventArgs e)
+        {
+            this._iCount++;
+
+            if (this.sGroup == "Change")
+            {
+                sGroup = "";
+
+                // 새로운 페이지에 레코드를 인쇄하기 이전에 페이지를 나누어라.
+                this.detail.NewPage = NewPage.Before;
+            }
+            else
+            {
+                this.groupFooter1.Visible = false;
+
+                // 현재 페이지에 레코드를 인쇄해라.
+                this.detail.NewPage = NewPage.None;
+            }
+
+            this.line5.Visible = false;
+
+            //this.DATE5.Text = dt.Rows[_iCount - 1]["DATE"];
+
+            this.MMNMAC.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.CPBUNKI01.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.USBUNKI01.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.CPBUNKI02.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.USBUNKI02.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.CPBUNKI03.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.USBUNKI03.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.CPBUNKI04.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.USBUNKI04.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.CPHAP.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.USHAP.Font = new Font("굴림", 9, FontStyle.Regular);
+            this.JAN.Font = new Font("굴림", 9, FontStyle.Regular);
+
+            if (dt.Rows[_iCount - 1]["MMNMAC"].ToString() == "총   계")
+            {
+                this.MMNMAC.Font = new Font("굴림", 9, FontStyle.Bold);
+
+                this.CPBUNKI01.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.USBUNKI01.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.CPBUNKI02.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.USBUNKI02.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.CPBUNKI03.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.USBUNKI03.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.CPBUNKI04.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.USBUNKI04.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.CPHAP.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.USHAP.Font = new Font("굴림", 9, FontStyle.Bold);
+                this.JAN.Font = new Font("굴림", 9, FontStyle.Bold);
+
+                this.line5.Visible = true;
+
+                this.line5.LineStyle = LineStyle.Solid;
+                this.line5.LineWeight = 1;
+            }
+
+            if (_fiCount == _iCount)
+            {
+                this.line5.Visible = true;
+
+                this.line5.LineStyle = LineStyle.Solid;
+                this.line5.LineWeight = 3;
+            }
+            else
+            {
+                if ((this._rowCount != 0 && dt.Rows[_iCount]["MMNMAC"].ToString() == "") || dt.Rows[_iCount]["MMNMAC"].ToString() == "총   계")
+                {
+                    this.line5.Visible = true;
+                }
+            }
+
+            // 레코드가 27이면 레코드를 0으로 바꾸거나 0이 아니면 레코드카운트 + 1
+            if (this._rowCount == 27)
+            {
+                this._rowCount = 0;
+
+                this.line5.Visible = true;
+
+                this.line5.LineStyle = LineStyle.Solid;
+                this.line5.LineWeight = 3;
+
+                // 새로운 페이지에 레코드를 인쇄한 후에 페이지를 나누어라.
+                this.detail.NewPage = NewPage.After;
+            }
+            else
+            {
+                this._rowCount++;
+
+                //// 현재 페이지에 레코드를 인쇄해라.
+                //this.detail.NewPage = NewPage.None;
+            }
+        }
+
+        private void TYACLB013R_DataInitialize(object sender, EventArgs e)
+        {
+            dt = (DataTable)this.DataSource;
+
+            if (dt != null)
+            {
+                _fiCount = dt.Rows.Count;
+            }
+        }
+
+        private void groupFooter1_Format(object sender, EventArgs e)
+        {
+            sGroup = "Change";
+
+            this._rowCount = 0;
+        }
+    }
+}

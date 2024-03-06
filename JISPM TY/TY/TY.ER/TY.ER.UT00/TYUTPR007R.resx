@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="VOLUME001.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME002.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME003.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME004.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME005.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME006.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME007.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME008.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME009.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME010.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME011.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME012.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME013.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME014.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME015.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME016.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME017.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME018.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME019.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME020.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME021.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME022.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME023.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME024.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME025.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME026.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME027.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME028.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME029.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME030.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME031.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME032.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME033.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME034.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME035.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME036.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME037.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME038.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME039.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME040.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME041.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME042.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME043.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME044.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME045.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME046.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME047.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME048.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME049.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME050.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME051.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME052.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME053.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME054.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME055.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME056.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME057.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME058.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME059.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME060.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME061.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME062.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME063.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME064.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME065.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME066.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME067.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME068.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME069.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME070.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME071.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME072.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME073.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME074.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME075.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME076.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME077.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME078.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME079.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME080.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME081.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME082.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME083.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME084.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME085.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME086.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME087.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME088.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME089.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME090.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME091.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME092.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME093.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME094.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME095.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME096.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME097.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME098.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME099.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <data name="VOLUME100.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0.000</value>&#xD;
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

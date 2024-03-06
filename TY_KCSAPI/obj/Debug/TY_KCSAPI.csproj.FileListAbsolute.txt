@@ -1,0 +1,17 @@
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.AssemblyReference.cache
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\TY_KCSAPI\obj\Debug\TY_KCSAPI.MainForm.resources
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.GenerateResource.cache
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.CoreCompileInputs.cache
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\bin\Debug\TY_KCSAPI.exe
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\bin\Debug\TY_KCSAPI.pdb
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.MainForm.resources
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.GenerateResource.cache
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.CoreCompileInputs.cache
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.exe
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.pdb
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\bin\Debug\TY_KCSAPI.exe.manifest
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\bin\Debug\TY_KCSAPI.application
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.exe.manifest
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.application
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\bin\Debug\TY_KCSAPI.exe.config
+D:\JisFrameWork\JISPM TY\TY_KCSAPI\obj\Debug\TY_KCSAPI.csproj.AssemblyReference.cache

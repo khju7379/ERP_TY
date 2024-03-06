@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtGOWKNATIONAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOWINATIONAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox15.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox16.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGONATIONAMTTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOWKHEALTHAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOWIHEALTHAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOWKEMPLOYAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOWIEMPLOYAMT.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtGOHEALTHAMTTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House_Lender.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House_Resident.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House11_15year.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House11_29year.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House11_30year.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House12_Fixed.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House12_Etc.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House15_15yearAndFIX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House15_15yearOrFIX.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House15_15yearEtc.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWISP_House15_10To15yearFix.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox35.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox36.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox37.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_IndPension.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_SmallTradeAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_HouseSav_Sub.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_HouseSav_WorkerSub.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_HouseSav_ToTalSub.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_HouseSav_TOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_PpreAscInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_PpreVntInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_PreAscInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_PreVntInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_AscInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_VntInvestAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_InvestAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_CreditCardAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_DebitCardAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_CashAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_MarketAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_PubTradeAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_CreditCardAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_OwnerContAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_SmallCompanyWorker.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_InvestStockSaving.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIET_BookAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="label3.Text" xml:space="preserve">&#xD;
+    <value>※ 근로소득자는 신고서에 소득·세액 공제 증명서류를 첨부하여 원천징수의무자(소속 회사 등)에게 제출하며, 원천징수의무자는 신고서 및 첨부서류를 확&#xD;
+   인하여 근로소득 세액계산을 하고 근로소득자에게 즉시 근로소득원천징수영수증을 발급해야 합니다. 연말정산 시 근로소득자에게 환급이 발생하는 &#xD;
+   경우 원천징수의무자는 근로소득자에게 환급세액을 지급해야 합니다.</value>&#xD;
+  </data>
+  <data name="txtKBHANGL.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWICOMPANY.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="textBox2.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWIWKDATE.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtKBJUMIN.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWISAUPNO.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWIYEAR.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="textBox1.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox3.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox4.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox5.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox7.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="textBox6.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFKIBON.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFBUNYO.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFSPARENT.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFKYUNG70.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFJANG.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFCHULSAN.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFJANYE.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWFTAXBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXPROBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXOBJBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXMEDBH.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXGYOUK.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXCARD.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXDEBCARD.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXCASH.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXMARKET.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXPUBTRANS.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFTAXFUND.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFPROBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFOBJBOHUM.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFMEDBH.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFGYOUK.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFCARD.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFDEBCARD.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFMARKET.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFPUBTRANS.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWFFUND.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="label339.Text" xml:space="preserve">&#xD;
+    <value>1. 근로소득자가 종(전)근무지 근로소득을 원천징수의무자에게 신고하지 않은 경우에는 근로소득자 본인이 종합소득세 신고를 해야 하며, 신고하지 않은&#xD;
+   경우 가산세 부과 등 불이익이 따릅니다.&#xD;
+2. 현 근무지의 연금보험료·국민건강보혐료 및 고용보험료 등은 신고인이 기재하지 않아도 됩니다.&#xD;
+3. "공제금액"안은 근로소득자가 원천징수의무자에게 제출하는 경우 적지 않을 수 있습니다.</value>&#xD;
+  </data>
+  <data name="txtWITX_ScienAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_RetireAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_PensionSavAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_AnuAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_InsurAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_ObsInsurAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_InsurAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_MedPrsDdcTrgtAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_MedGeneralAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_MedAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduOwnAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduKindAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduStudAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduUnivAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduObjAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduAmountTOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_PoFund10Down.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_PoFund10Up.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_LawCon.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_FixConGroupOut.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_FixConGroup.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_Con_TOTAL.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_MonthRent.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_MedOwnAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduKidCount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduStdCount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduUndCount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtWITX_EduDsbrCount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <data name="txtKBHANGL2.OutputFormat" xml:space="preserve">&#xD;
+    <value />&#xD;
+  </data>
+  <data name="txtWITX_MedNotAmount.OutputFormat" xml:space="preserve">&#xD;
+    <value>#,##0</value>&#xD;
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

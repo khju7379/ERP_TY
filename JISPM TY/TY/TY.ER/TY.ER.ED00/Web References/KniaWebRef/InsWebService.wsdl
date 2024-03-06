@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://ws.insedi.or.kr/" name="InsWebService" targetNamespace="http://ws.insedi.or.kr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://ws.insedi.or.kr/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.insedi.or.kr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getBondedGoodsInResult" type="tns:getBondedGoodsInResult" />
+      <xs:element name="getBondedGoodsInResultResponse" type="tns:getBondedGoodsInResultResponse" />
+      <xs:element name="getBondedGoodsOutResult" type="tns:getBondedGoodsOutResult" />
+      <xs:element name="getBondedGoodsOutResultResponse" type="tns:getBondedGoodsOutResultResponse" />
+      <xs:element name="getBondedGoodsPremiumResult" type="tns:getBondedGoodsPremiumResult" />
+      <xs:element name="getBondedGoodsPremiumResultResponse" type="tns:getBondedGoodsPremiumResultResponse" />
+      <xs:element name="getDomesticGoodsInResult" type="tns:getDomesticGoodsInResult" />
+      <xs:element name="getDomesticGoodsInResultResponse" type="tns:getDomesticGoodsInResultResponse" />
+      <xs:element name="getDomesticGoodsOutResult" type="tns:getDomesticGoodsOutResult" />
+      <xs:element name="getDomesticGoodsOutResultResponse" type="tns:getDomesticGoodsOutResultResponse" />
+      <xs:element name="getDomesticGoodsPremiumResult" type="tns:getDomesticGoodsPremiumResult" />
+      <xs:element name="getDomesticGoodsPremiumResultResponse" type="tns:getDomesticGoodsPremiumResultResponse" />
+      <xs:element name="getStatusData" type="tns:getStatusData" />
+      <xs:element name="getStatusDataResponse" type="tns:getStatusDataResponse" />
+      <xs:element name="saveBondedGoodsInInfo" type="tns:saveBondedGoodsInInfo" />
+      <xs:element name="saveBondedGoodsInInfoResponse" type="tns:saveBondedGoodsInInfoResponse" />
+      <xs:element name="saveBondedGoodsOutInfo" type="tns:saveBondedGoodsOutInfo" />
+      <xs:element name="saveBondedGoodsOutInfoResponse" type="tns:saveBondedGoodsOutInfoResponse" />
+      <xs:element name="saveBondedGoodsPremiumInfo" type="tns:saveBondedGoodsPremiumInfo" />
+      <xs:element name="saveBondedGoodsPremiumInfoResponse" type="tns:saveBondedGoodsPremiumInfoResponse" />
+      <xs:element name="saveDomesticGoodsInInfo" type="tns:saveDomesticGoodsInInfo" />
+      <xs:element name="saveDomesticGoodsInInfoResponse" type="tns:saveDomesticGoodsInInfoResponse" />
+      <xs:element name="saveDomesticGoodsOutInfo" type="tns:saveDomesticGoodsOutInfo" />
+      <xs:element name="saveDomesticGoodsOutInfoResponse" type="tns:saveDomesticGoodsOutInfoResponse" />
+      <xs:element name="saveDomesticGoodsPremiumInfo" type="tns:saveDomesticGoodsPremiumInfo" />
+      <xs:element name="saveDomesticGoodsPremiumInfoResponse" type="tns:saveDomesticGoodsPremiumInfoResponse" />
+      <xs:element name="sayHi" type="tns:sayHi" />
+      <xs:element name="sayHiResponse" type="tns:sayHiResponse" />
+      <xs:complexType name="getBondedGoodsOutResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="outNo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBondedGoodsOutResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsOutInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="outNo" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsOutInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsInResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="inNo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsInResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsOutInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="outNo" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsOutInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsInInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="inNo" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsInInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsInInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="inNo" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsInInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsPremiumInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="referenceID" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBondedGoodsPremiumInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsOutResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="outNo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsOutResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBondedGoodsPremiumResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="referenceID" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBondedGoodsPremiumResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sayHi">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sayHiResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsPremiumInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" name="referenceID" type="xs:string" />
+          <xs:element minOccurs="0" name="data" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveDomesticGoodsPremiumInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBondedGoodsInResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="inNo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBondedGoodsInResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStatusData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStatusDataResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsPremiumResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="pass" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="referenceID" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDomesticGoodsPremiumResultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception" />
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="saveDomesticGoodsInInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsInInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsPremiumInfo">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsPremiumInfo" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsOutResult">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsOutResult" />
+  </wsdl:message>
+  <wsdl:message name="sayHi">
+    <wsdl:part name="parameters" element="ns1:sayHi" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsInInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsInInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveDomesticGoodsPremiumInfo">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsPremiumInfo" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsOutResult">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsOutResult" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsOutInfo">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsOutInfo" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsInResultResponse">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsInResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsInResultResponse">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsInResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveDomesticGoodsOutInfo">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsOutInfo" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsPremiumResult">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsPremiumResult" />
+  </wsdl:message>
+  <wsdl:message name="getStatusDataResponse">
+    <wsdl:part name="parameters" element="ns1:getStatusDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsPremiumResult">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsPremiumResult" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="ns1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsPremiumInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsPremiumInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveDomesticGoodsInInfo">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsInInfo" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsOutResultResponse">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsOutResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="sayHiResponse">
+    <wsdl:part name="parameters" element="ns1:sayHiResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveDomesticGoodsPremiumInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsPremiumInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsInInfo">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsInInfo" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsOutResultResponse">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsOutResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveBondedGoodsOutInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveBondedGoodsOutInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsInResult">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsInResult" />
+  </wsdl:message>
+  <wsdl:message name="saveDomesticGoodsOutInfoResponse">
+    <wsdl:part name="parameters" element="ns1:saveDomesticGoodsOutInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsInResult">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsInResult" />
+  </wsdl:message>
+  <wsdl:message name="getBondedGoodsPremiumResultResponse">
+    <wsdl:part name="parameters" element="ns1:getBondedGoodsPremiumResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDomesticGoodsPremiumResultResponse">
+    <wsdl:part name="parameters" element="ns1:getDomesticGoodsPremiumResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="getStatusData">
+    <wsdl:part name="parameters" element="ns1:getStatusData" />
+  </wsdl:message>
+  <wsdl:portType name="InsWebService">
+    <wsdl:operation name="getBondedGoodsOutResult">
+      <wsdl:input name="getBondedGoodsOutResult" message="ns1:getBondedGoodsOutResult" />
+      <wsdl:output name="getBondedGoodsOutResultResponse" message="ns1:getBondedGoodsOutResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsOutInfo">
+      <wsdl:input name="saveDomesticGoodsOutInfo" message="ns1:saveDomesticGoodsOutInfo" />
+      <wsdl:output name="saveDomesticGoodsOutInfoResponse" message="ns1:saveDomesticGoodsOutInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsInResult">
+      <wsdl:input name="getDomesticGoodsInResult" message="ns1:getDomesticGoodsInResult" />
+      <wsdl:output name="getDomesticGoodsInResultResponse" message="ns1:getDomesticGoodsInResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsOutInfo">
+      <wsdl:input name="saveBondedGoodsOutInfo" message="ns1:saveBondedGoodsOutInfo" />
+      <wsdl:output name="saveBondedGoodsOutInfoResponse" message="ns1:saveBondedGoodsOutInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsInInfo">
+      <wsdl:input name="saveBondedGoodsInInfo" message="ns1:saveBondedGoodsInInfo" />
+      <wsdl:output name="saveBondedGoodsInInfoResponse" message="ns1:saveBondedGoodsInInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsInInfo">
+      <wsdl:input name="saveDomesticGoodsInInfo" message="ns1:saveDomesticGoodsInInfo" />
+      <wsdl:output name="saveDomesticGoodsInInfoResponse" message="ns1:saveDomesticGoodsInInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="saveBondedGoodsPremiumInfo">
+      <wsdl:input name="saveBondedGoodsPremiumInfo" message="ns1:saveBondedGoodsPremiumInfo" />
+      <wsdl:output name="saveBondedGoodsPremiumInfoResponse" message="ns1:saveBondedGoodsPremiumInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsOutResult">
+      <wsdl:input name="getDomesticGoodsOutResult" message="ns1:getDomesticGoodsOutResult" />
+      <wsdl:output name="getDomesticGoodsOutResultResponse" message="ns1:getDomesticGoodsOutResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getBondedGoodsPremiumResult">
+      <wsdl:input name="getBondedGoodsPremiumResult" message="ns1:getBondedGoodsPremiumResult" />
+      <wsdl:output name="getBondedGoodsPremiumResultResponse" message="ns1:getBondedGoodsPremiumResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="sayHi">
+      <wsdl:input name="sayHi" message="ns1:sayHi" />
+      <wsdl:output name="sayHiResponse" message="ns1:sayHiResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveDomesticGoodsPremiumInfo">
+      <wsdl:input name="saveDomesticGoodsPremiumInfo" message="ns1:saveDomesticGoodsPremiumInfo" />
+      <wsdl:output name="saveDomesticGoodsPremiumInfoResponse" message="ns1:saveDomesticGoodsPremiumInfoResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getBondedGoodsInResult">
+      <wsdl:input name="getBondedGoodsInResult" message="ns1:getBondedGoodsInResult" />
+      <wsdl:output name="getBondedGoodsInResultResponse" message="ns1:getBondedGoodsInResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getStatusData">
+      <wsdl:input name="getStatusData" message="ns1:getStatusData" />
+      <wsdl:output name="getStatusDataResponse" message="ns1:getStatusDataResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getDomesticGoodsPremiumResult">
+      <wsdl:input name="getDomesticGoodsPremiumResult" message="ns1:getDomesticGoodsPremiumResult" />
+      <wsdl:output name="getDomesticGoodsPremiumResultResponse" message="ns1:getDomesticGoodsPremiumResultResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

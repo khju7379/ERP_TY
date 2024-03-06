@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TY.ER.ED00.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ED00_KniaWebRef_InsWebServiceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://insedi.knia.or.kr/ws/insWebService</Value>
+    </Setting>
+    <Setting Name="ED00_KniaWebRef_Test_InsWebServiceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://14.63.227.103/ws/insWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

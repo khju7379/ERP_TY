@@ -1,0 +1,71 @@
+﻿using GrapeCity.ActiveReports.Document;
+using GrapeCity.ActiveReports.Document.Section;
+using GrapeCity.ActiveReports.SectionReportModel;
+using GrapeCity.ActiveReports.Controls;
+using GrapeCity.ActiveReports;
+using System;
+using System.Drawing;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+
+
+using System.Data;
+
+namespace TY.ER.UT00
+{
+    /// <summary>
+    /// Summary description for TYUTME017R.
+    /// </summary>
+    public partial class TYUTME017R1 : GrapeCity.ActiveReports.SectionReport
+    {
+        private int fiCount = 0;
+        private int fiMaxCnt = 0;
+        private DataTable _dt = new DataTable();
+
+        public TYUTME017R1()
+        {
+            //
+            // Required for Windows Form Designer support
+            //
+            InitializeComponent();
+        }
+
+        private void pageHeader_Format(object sender, EventArgs e)
+        {
+            _dt = (DataTable)this.DataSource;
+            fiMaxCnt = _dt.Rows.Count;
+        }
+
+        private void detail_Format(object sender, EventArgs e)
+        {
+            if (fiCount > 0)
+            {
+                if (_dt.Rows[fiCount - 1]["NUM"].ToString() != _dt.Rows[fiCount]["NUM"].ToString())
+                {
+                    this.detail.NewPage = NewPage.Before;
+                }
+                else
+                {
+                    if (_dt.Rows[fiCount - 1]["EDHIPHANG"].ToString() != _dt.Rows[fiCount]["EDHIPHANG"].ToString())
+                    {
+                        this.detail.NewPage = NewPage.Before;
+                    }
+                    else
+                    {
+                        if (_dt.Rows[fiCount - 1]["EDHHWAJU"].ToString() != _dt.Rows[fiCount]["EDHHWAJU"].ToString())
+                        {
+                            this.detail.NewPage = NewPage.Before;
+                        }
+                        else
+                        {
+                            this.detail.NewPage = NewPage.None;
+                        }
+                    }
+                }
+            }
+
+            fiCount++;
+        }
+    }
+}
